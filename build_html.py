@@ -190,6 +190,10 @@ td{{padding:5px 4px;font-size:11px}}
 <span>&#9742; <a href="tel:+79885315067">+7 988 531 50 67</a></span>
 <span class="sep">|</span>
 <span>Аникин Сергей Александрович</span>
+<span class="sep">|</span>
+<span><a href="https://t.me/Asa88serwer" target="_blank">Telegram</a></span>
+<span class="sep">|</span>
+<span><a href="https://max.ru/u/f9LHodD0cOLxsJKEgdxMwcWarCIrWLrkGd4onIZR9HJBtCEZ_" target="_blank">MAX</a></span>
 </div>
 <div class="brands">
 <span class="label">Бренды:</span>
