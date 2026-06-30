@@ -1,0 +1,863 @@
+[
+  {
+    "name": "Dahua IFS-EOA2.5S-C",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Модуль LED-дисплея для улицы",
+      "Пиксельный шаг": "2.5 мм",
+      "Среда установки": "Outdoor",
+      "Яркость": "4000–5000 nit",
+      "Частота обновления": "3840 Гц",
+      "Размер модуля": "320×160 мм",
+      "Разрешение модуля": "128×64",
+      "Срок службы": "100 000 часов"
+    },
+    "image_url": "",
+    "source": "https://display.dahuasecurity.com/business/en/products/productCategories?menu_id=8"
+  },
+  {
+    "name": "Dahua IFS-EIA2.5S-CG",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Модуль LED-дисплея для помещений",
+      "Пиксельный шаг": "2.5 мм",
+      "Состав пикселей": "SMD2121",
+      "Среда установки": "Indoor",
+      "Яркость": "500–550 nit",
+      "Частота обновления": "3840 Гц",
+      "Размер модуля": "320×160 мм",
+      "Разрешение модуля": "128×64 (8192 точек)",
+      "Контрастность": "4000:1",
+      "Угол обзора": "140°/140° (Г/В)",
+      "Потребляемая мощность": "≤15.5 Вт (DC 5V)",
+      "Срок службы": "100 000 часов"
+    },
+    "image_url": "",
+    "source": "https://collab.vn/wp-content/uploads/2022/07/IFS-EIA2.5S-C_Datasheet20220105.pdf"
+  },
+  {
+    "name": "Dahua IFS-EIA1.2S-CG",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Модуль LED-дисплея для помещений",
+      "Пиксельный шаг": "1.2 мм",
+      "Среда установки": "Indoor",
+      "Яркость": "450–600 nit",
+      "Частота обновления": "3840 Гц",
+      "Размер модуля": "320×160 мм",
+      "Срок службы": "100 000 часов"
+    },
+    "image_url": "",
+    "source": "https://display.dahuasecurity.com/business/en"
+  },
+  {
+    "name": "Dahua DHI-HY-SA20A",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Автономный детектор дыма",
+      "Технология": "Оптический датчик дыма",
+      "Площадь покрытия": "20–40 м²",
+      "Уровень звукового сигнала": "85 дБ",
+      "Питание": "1 × CR123A 3V литий",
+      "Вес": "136 г",
+      "Сертификаты": "CE, TÜV, EN 14604:2005+AC:2008"
+    },
+    "image_url": "https://www.dahuasecurity.com/products/All-Products/Fire-Alarm/Smoke-Alarms/HY-SA20A",
+    "source": "https://fileobs.wisualarm.com/asset/upload/file/DHI-HY-SA20A_datasheet_20220215.pdf"
+  },
+  {
+    "name": "Dahua DH-PFB2204W",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Настенный кронштейн для камер",
+      "Материал": "Алюминий + SGCC",
+      "Размеры": "162×129.4×80 мм",
+      "Цвет": "Белый",
+      "Нагрузка": "1.0 кг",
+      "Вес нетто": "0.49 кг",
+      "Рабочая температура": "–40°C до +60°C",
+      "Влажность": "<90% RH",
+      "Тип установки": "Настенный монтаж"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_99_44_10592/ProductImage/PFB2204W_View_Front-logo.png",
+    "source": "https://www.dahuasecurity.com/products/accessories/camera-accessories/camera-mounts/wall-mount-brackets/pfb2204w"
+  },
+  {
+    "name": "Dahua DH-PFB2203W",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Настенный кронштейн для камер",
+      "Материал": "Алюминий + SGCC",
+      "Размеры": "162×129.4×80 мм",
+      "Цвет": "Белый",
+      "Нагрузка": "1.0 кг",
+      "Вес нетто": "0.48 кг",
+      "Рабочая температура": "–40°C до +60°C",
+      "Влажность": "<90% RH",
+      "Тип установки": "Настенный монтаж"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_99_44_10588/ProductImage/PFB2203W_View_Front-logo.png",
+    "source": "https://www.dahuasecurity.com/products/accessories/camera-accessories/camera-mounts/wall-mount-brackets/pfb2203w"
+  },
+  {
+    "name": "Dahua DHI-ARA24-W2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Беспроводной брелок-пульт управления охраной",
+      "Кнопки": "4 (Дом, Уход, Снятие с охраны, SOS)",
+      "Частота": "433.1–434.6 МГц",
+      "Дальность связи": "до 500 м (открытое пространство)",
+      "Шифрование": "AES128",
+      "Питание": "CR2032",
+      "Срок службы батареи": "3 года",
+      "Размеры": "60×39.5×15 мм",
+      "Вес": "20 г",
+      "Рабочая температура": "–10°C до +55°C",
+      "Протокол": "Двусторонняя связь с частотным скачком",
+      "Сертификаты": "CE"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/12967/image/1_0_01_19_10552_850621529.PNG",
+    "source": "https://www.dahuasecurity.com/products/Alarms/Wireless-Alarm/Accessories/ARA24-W2"
+  },
+  {
+    "name": "Dahua DH-PFA136",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Монтажная коробка (распределительная коробка)",
+      "Материал": "Алюминиевый сплав",
+      "Размеры": "Ø114.8×32.0 мм",
+      "Резьба": "G1/2",
+      "Нагрузка": "1.0 кг",
+      "Вес нетто": "0.19 кг",
+      "Цвет": "Белый",
+      "Рабочая температура": "–40°C до +60°C",
+      "Влажность": "<90% RH"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20230201/PFA136_1.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Accessories/Camera-Accessories/Camera-Mounts/Junction-Boxes/PFA136"
+  },
+  {
+    "name": "Dahua DHI-ARD323-W2(S)",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Беспроводной датчик открытия двери/окна (малый)",
+      "Тип сенсора": "Геркон (Reed switch)",
+      "Расстояние срабатывания": "<40 мм",
+      "Частота": "433.1–434.6 МГц",
+      "Дальность связи": "до 1200 м (открытое пространство)",
+      "Шифрование": "AES128",
+      "Питание": "CR123A",
+      "Срок службы батареи": "4 года (NO), 2 года (NC/Pulse)",
+      "Размеры": "100.2×20.8×20.3 мм",
+      "Вес": "70 г",
+      "Рабочая температура": "–10°C до +55°C (помещение)"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_19_10606/ProductImage/ARD323-W2_Front.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Alarms/Wireless-Alarm/Detectors/ARD323-W2(S)"
+  },
+  {
+    "name": "Dahua DHI-ARD323-W2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Беспроводной датчик открытия двери/окна",
+      "Тип сенсора": "Геркон (Reed switch)",
+      "Расстояние срабатывания": "<40 мм",
+      "Частота": "868.0–868.6 МГц",
+      "Дальность связи": "до 1200 м (открытое пространство)",
+      "Шифрование": "AES128",
+      "Питание": "CR123A",
+      "Срок службы батареи": "4 года (NO), 2 года (NC/Pulse)",
+      "Размеры": "100.2×20.8×20.3 мм",
+      "Вес": "70 г",
+      "Рабочая температура": "–10°C до +55°C",
+      "Сертификаты": "CE, EN 50131 Grade 2"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_19_10606/ProductImage/ARD323-W2_Front.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Alarms/Wireless-Products/Detectors/ARD323-W2(868)"
+  },
+  {
+    "name": "Dahua DHI-ARD1233-W2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Беспроводной ИК-датчик движения (PIR)",
+      "Тип сенсора": "Двойной пироэлектрический PIR",
+      "Дальность обнаружения": "12 м, 90° (высота установки 2.2 м)",
+      "Скорость обнаружения": "0.3–3 м/с",
+      "Иммунитет к животным": "≤18 кг",
+      "Чувствительность": "3 уровня",
+      "Частота": "433.1–434.6 МГц",
+      "Дальность связи": "до 1200 м",
+      "Шифрование": "AES128",
+      "Питание": "CR123A",
+      "Срок службы батареи": "4 года",
+      "Размеры": "104×60×50 мм",
+      "Вес": "100 г",
+      "Рабочая температура": "–15°C до +65°C (помещение)"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/13047/image/1_0_01_19_10554_835743901.PNG",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Alarms/Wireless-Products/Detectors/ARD1233-W2"
+  },
+  {
+    "name": "Dahua DHI-VTO2311R-WP",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Wi-Fi IP-вызывная панель для частного дома",
+      "Матрица": "1/2.8\" 2 МП CMOS",
+      "Угол обзора": "H:110°, V:62°, D:133°",
+      "WDR": "120 дБ",
+      "Разрешение видео": "1080p/720p",
+      "Сжатие": "H.264/H.265",
+      "Аудио": "Двусторонняя связь",
+      "Карты доступа": "IC (ёмкость 3000)",
+      "Степень защиты": "IP65",
+      "Размеры": "160×50×30 мм",
+      "Питание": "12–33 VDC / PoE стандарт",
+      "Рабочая температура": "–40°C до +60°C",
+      "Интерфейс": "RJ-45 10/100 Мбит/с, Wi-Fi",
+      "Сертификаты": "CE, FCC"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20211230/vv6.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Video-Intercoms/IP-Series/Villa-Door-Station/Pro-Series/VTO2311R-WP"
+  },
+  {
+    "name": "Dahua DH-P3D-3F-PV-P",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Наружная Wi-Fi камера с двойным объективом и поворотом (Picoo Series)",
+      "Матрица": "2× 1/2.9\" CMOS",
+      "Разрешение": "2304×1296 на канал (3 МП)",
+      "Объективы": "6 мм (PTZ), 2.8 мм (фикс.)",
+      "Подсветка": "Тёплый свет до 40 м",
+      "WDR": "120 дБ",
+      "Wi-Fi": "Wi-Fi 6 (802.11b/g/n, 2.4 ГГц)",
+      "Интерфейс": "RJ-45 10/100 Мбит/с, Bluetooth",
+      "Степень защиты": "IP66",
+      "Поворот": "0°–352° горизонт., 0°–90° вертикаль",
+      "Питание": "12 VDC / PoE (802.3af)",
+      "Потребление": "2.3 Вт (баз.), 9.8 Вт (макс.)",
+      "Размеры": "159.4×119.1×210 мм",
+      "Вес": "585 г",
+      "Рабочая температура": "–30°C до +50°C"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_04_45921/ProductImage/1_0_01_04_45921_794553255_crop.png",
+    "source": "https://www.dahuasecurity.com/products/wireless-products/outdoor-cameras/picoo-series/p3d-3f-pv-p"
+  },
+  {
+    "name": "Dahua DH-PFA135",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Монтажная коробка (распределительная коробка)",
+      "Материал": "Алюминиевый сплав",
+      "Размеры": "Ø94.3×34.1 мм",
+      "Резьба": "G1/2",
+      "Нагрузка": "1.0 кг",
+      "Вес нетто": "0.15 кг",
+      "Цвет": "Белый",
+      "Рабочая температура": "–40°C до +60°C",
+      "Влажность": "<90% RH"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_99_44_10492/ProductImage/1_0_99_44_10492_600050235.PNG",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Accessories/Camera-Accessories/Camera-Mounts/Junction-Boxes/PFA135"
+  },
+  {
+    "name": "Dahua DH-PFA1320R",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Пластиковая монтажная коробка (для помещений)",
+      "Материал": "PC (V2 огнестойкий)",
+      "Размеры": "Ø126.6×45 мм",
+      "Нагрузка": "1.0 кг",
+      "Вес нетто": "0.09 кг",
+      "Цвет": "Белый",
+      "Рабочая температура": "–40°C до +60°C",
+      "Влажность": "<90% RH",
+      "Тип установки": "Настенный / потолочный / на столбе"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_99_42_10068/ProductImage/1_0_99_42_10068_541330992_crop_thumb.png",
+    "source": "https://www.dahuasecurity.com/bd/products/All-Products/Accessories/Camera-Accessories/Camera-Mounts/Junction-Boxes/PFA1320R"
+  },
+  {
+    "name": "Dahua DHI-ARD2231-W2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Беспроводной двойной детектор (PIR + микроволновый)",
+      "Технология": "PIR + 24 ГГц микроволновый сенсор",
+      "Дальность обнаружения": "12 м, 90° (высота 2.2 м)",
+      "Скорость обнаружения": "0.3–3 м/с",
+      "Иммунитет к животным": "≤18 кг, высота <50 см",
+      "Частота": "868.0–868.6 МГц",
+      "Дальность связи": "до 1600 м",
+      "Питание": "CR123A",
+      "Срок службы батареи": "3 года",
+      "Размеры": "104×60×50 мм",
+      "Вес": "106 г",
+      "Рабочая температура": "–10°C до +55°C (помещение)"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20221118/ARD912-W2(868)_1.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Alarms/Wireless-Alarm/Detectors/ARD2231-W2(868)"
+  },
+  {
+    "name": "Dahua DHI-ARD912-W2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Беспроводной датчик протечки воды",
+      "Частота": "868.0–868.6 МГц",
+      "Дальность связи": "до 1200 м",
+      "Шифрование": "AES128",
+      "Питание": "CR123A",
+      "Срок службы батареи": "3 года",
+      "Размеры": "84.7×84.7×32.5 мм",
+      "Степень защиты": "IPX5",
+      "Рабочая температура": "–10°C до +55°C"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20221118/ARD912-W2(868)_1.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Alarms/Wireless-Products/Detectors/ARD912-W2(868)"
+  },
+  {
+    "name": "Dahua DH-HAC-HDW1209TLQP-LED-0280B-S2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Купольная HDCVI-камера с Full-Color",
+      "Матрица": "1/2.8\" CMOS",
+      "Разрешение": "2 МП (1920×1080)",
+      "Объектив": "2.8 мм фиксированный",
+      "Угол обзора": "~103°",
+      "Подсветка": "Full-Color LED, до 20 м",
+      "Выход": "CVI/TVI/AHD/CVBS переключаемый",
+      "Степень защиты": "IP67",
+      "Питание": "12 VDC ±30%",
+      "Рабочая температура": "–40°C до +60°C"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20220520/HAC-HDW1209TLQP-LED_1.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/HDCVI-Cameras/Lite-Series/1080P/Full-color/HAC-HDW1209TLQP-LED"
+  },
+  {
+    "name": "Dahua DH-SD5A432GB-HNR",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "PTZ IP-камера WizSense",
+      "Матрица": "1/2.8\" CMOS",
+      "Разрешение": "4 МП (2560×1440)",
+      "Оптический зум": "32×",
+      "Фокусное расстояние": "4.8–154 мм",
+      "Диафрагма": "F1.6–F4.0",
+      "ИК-подсветка": "до 150 м",
+      "Мин. освещённость": "0.005 лк (цвет), 0.0005 лк (ч/б)",
+      "WDR": "120 дБ",
+      "ИИ-функции": "Auto Tracking 3.0, Face Detection, SMD 4.0",
+      "Степень защиты": "IP67, IK10",
+      "Питание": "24 VDC / PoE+",
+      "Рабочая температура": "–40°C до +70°C",
+      "Размеры": "332 мм × Ø190 мм",
+      "Вес нетто": "4.7 кг"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20220630/sd521_thumb.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/PTZ-Cameras/WizSense-Series/SD5/SD5A432GB-HNR"
+  },
+  {
+    "name": "Dahua DH-HAC-HFW1239TP-A-LED-0280B-S2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Цилиндрическая HDCVI-камера Full-Color с микрофоном",
+      "Матрица": "1/2.8\" CMOS",
+      "Разрешение": "2 МП (1080p)",
+      "Объектив": "2.8 мм фиксированный, 107°",
+      "Подсветка": "Full-Color LED (Smart Light), до 20 м",
+      "Выход": "CVI/TVI/AHD/CVBS переключаемый",
+      "Микрофон": "Встроенный",
+      "Мин. освещённость": "0.001 лк (цвет)",
+      "WDR": "130 дБ",
+      "Степень защиты": "IP67",
+      "Питание": "12 VDC",
+      "Рабочая температура": "–40°C до +60°C"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20220520/HAC-HFW1239TP-A-LED_1.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/HDCVI-Cameras/Lite-Series/1080P/Full-color/HAC-HFW1239TP-A-LED"
+  },
+  {
+    "name": "Dahua DHI-VTO2111D-P-S3",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "IP SIP вызывная панель для частного дома (Lite)",
+      "Матрица": "1/2.8\" 2 МП CMOS",
+      "Угол обзора": "H:107°, V:60°, D:122°",
+      "Сжатие": "H.264/H.265",
+      "Аудио": "Двусторонняя связь",
+      "Карты доступа": "IC, ёмкость 10000",
+      "Дальность считывания карты": "0–4.5 см",
+      "Степень защиты": "IP65",
+      "Размеры": "135.1×70.6×34.6 мм",
+      "Вес": "326 г",
+      "Питание": "12 VDC / PoE стандарт",
+      "Рабочая температура": "–30°C до +60°C"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_15_12431/ProductImage/1_0_01_15_12431_533108930_crop.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Video-Intercoms/IP-Series/Villa-Door-Station/Lite-Series/VTO2111D-P-S3"
+  },
+  {
+    "name": "Dahua DH-SDT3E410-8P-MB-A-PV1-0280",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Панорамная + PTZ IP-камера X-Spans TiOC",
+      "Матрица обзора": "1/2.8\" CMOS, 8 МП (5376×1520)",
+      "Матрица детали": "1/2.8\" CMOS, 4 МП (2560×1440)",
+      "Объектив обзора": "2.8 мм, F1.6, 180°",
+      "Объектив детали": "4–40 мм, F1.6–F3.6, 10× зум",
+      "ИК-подсветка": "до 70 м (детальный канал)",
+      "Белый свет": "до 30 м",
+      "PTZ": "Поворот 0–345°, наклон –10°/+90°",
+      "ИИ-функции": "Auto Tracking, SMD, IVS, Face Detection",
+      "Степень защиты": "IP66, TVS 6000V",
+      "Питание": "12 VDC / PoE+ (802.3at)",
+      "Размеры": "140.3×181.7×238.8 мм",
+      "Вес": "2.17 кг",
+      "Рабочая температура": "–30°C до +60°C"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/image/20241105/SDT3E410-8P-MB-A-PV1-0280_1.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/PTZ-Cameras/X-Spans-Series/SDT3E410-8P-MB-A-PV1"
+  },
+  {
+    "name": "Dahua DH-PFA139",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Монтажная коробка (распределительная коробка)",
+      "Материал": "Алюминиевый сплав",
+      "Размеры": "Ø109.9×27.0 мм",
+      "Резьба": "G1/2",
+      "Нагрузка": "1.0 кг",
+      "Вес нетто": "0.17 кг",
+      "Цвет": "Белый",
+      "Рабочая температура": "–40°C до +60°C",
+      "Влажность": "<90% RH"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20230201/PFA139_1.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Accessories/Camera-Accessories/Camera-Mounts/Junction-Boxes/PFA139"
+  },
+  {
+    "name": "Dahua DH-SD5A445GB-HNR",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "PTZ IP-камера WizSense",
+      "Матрица": "1/2.8\" CMOS",
+      "Разрешение": "4 МП (2560×1440)",
+      "Оптический зум": "45×",
+      "Фокусное расстояние": "3.95–177.75 мм",
+      "Диафрагма": "F1.6–F4.95",
+      "Угол обзора": "H:65.7°–1.9°",
+      "ИК-подсветка": "до 150 м",
+      "Мин. освещённость": "0.005 лк (цвет), 0.0005 лк (ч/б)",
+      "PTZ": "Поворот 360° непрерывно, наклон –15°/+90°",
+      "ИИ-функции": "Auto Tracking 3.0, Face Detection, SMD 4.0",
+      "Степень защиты": "IP67, IK10, TVS 6000V",
+      "Питание": "24 VDC / PoE+",
+      "Рабочая температура": "–40°C до +70°C"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20221028/SD5A_21_thumb.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/PTZ-Cameras/WizSense-Series/SD5/SD5A445GB-HNR"
+  },
+  {
+    "name": "Dahua DH-HAC-HDW1209TLQP-LED-0360B-S2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Купольная HDCVI-камера с Full-Color",
+      "Матрица": "1/2.8\" CMOS",
+      "Разрешение": "2 МП (1920×1080)",
+      "Объектив": "3.6 мм фиксированный",
+      "Подсветка": "Full-Color LED, до 20 м",
+      "Выход": "CVI/TVI/AHD/CVBS переключаемый",
+      "Мин. освещённость": "0.02 лк",
+      "Степень защиты": "IP50",
+      "Питание": "12 VDC",
+      "Рабочая температура": "–40°C до +60°C"
+    },
+    "image_url": "https://material.dahuasecurity.com/uploads/image/20220520/HAC-HDW1209TLQP-LED_1.png",
+    "source": "https://www.dahuasecurity.com/in/products/All-Products/HDCVI-Cameras/Lite-Series/1080P/Full-color/HAC-HDW1209TLQP-LED"
+  },
+  {
+    "name": "ZKTeco IC Thin Card",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Бесконтактная карта доступа (тонкая, Mifare)",
+      "Частота": "13.56 МГц",
+      "Стандарт": "ISO/IEC 14443A",
+      "Толщина": "0.8 мм",
+      "Размеры": "54×85.6 мм",
+      "Материал": "PVC",
+      "Дальность считывания": "до 10 см",
+      "Рабочая температура": "–20°C до +50°C"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/rfid-card.png",
+    "source": "https://zkteco.technology/en/product/id-mifare-hid-card/"
+  },
+  {
+    "name": "ZKTeco ID Card(Thick)",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Бесконтактная карта доступа (толстая, EM 125 кГц)",
+      "Частота": "125 кГц (EM, TK4100)",
+      "Формат": "Wiegand 26 бит",
+      "Толщина": "1.5 мм",
+      "Размеры": "54×86×1.5 мм",
+      "Материал": "PVC",
+      "Дальность считывания": "2–15 см",
+      "Рабочая температура": "–45°C до +70°C",
+      "Вес": "9 г",
+      "Режим": "Только чтение"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/rfid-card.png",
+    "source": "https://www.zkteco.in/rfid-card/648"
+  },
+  {
+    "name": "ZKTeco ID card(thin)",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Бесконтактная карта доступа (тонкая, EM 125 кГц)",
+      "Частота": "125 кГц (EM)",
+      "Толщина": "0.8 мм",
+      "Размеры": "54×85.6 мм",
+      "Материал": "PVC",
+      "Дальность считывания": "до 10 см",
+      "Рабочая температура": "–20°C до +50°C",
+      "Режим": "Только чтение"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/rfid-card.png",
+    "source": "https://zkteco.technology/en/product/id-mifare-hid-card/"
+  },
+  {
+    "name": "ZKTeco New UHF Waterproof Tag",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "UHF метка для управления въездом автотранспорта",
+      "Частота": "860–928 МГц",
+      "Протокол": "ISO18000-6C (EPC Gen2)",
+      "Дальность считывания": "0–6 м",
+      "Размеры": "99×12 мм",
+      "Рабочая температура": "–25°C до +75°C",
+      "Крепление": "Наклейка на лобовое стекло"
+    },
+    "image_url": "https://zkteco.systems/wp-content/uploads/resized/400_400_201904uhf1-tag3-card-500x500.webp",
+    "source": "https://zkteco.systems/en/product/uhf1-tag3/"
+  },
+  {
+    "name": "ZKTeco ID TAG Blue",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Метка/брелок для контроля охраны (синяя)",
+      "Частота": "125 кГц (EM/ID) или 13.56 МГц (Mifare)",
+      "Цвет": "Синий",
+      "Диаметр": "25 мм",
+      "Применение": "Системы обхода охраны (контрольные точки)",
+      "Стандарт": "ISO 11785 (EM) / ISO 14443A (Mifare)"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/rfid-tag.png",
+    "source": "https://zkteco.technology/en/product/id-mifare-tag/"
+  },
+  {
+    "name": "ZKTeco IC Thin Card (Thick)",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Бесконтактная Mifare карта доступа (толстая)",
+      "Частота": "13.56 МГц (Mifare S50/S70)",
+      "Стандарт": "ISO/IEC 14443A",
+      "Ёмкость памяти": "1 Кб (S50) или 4 Кб (S70)",
+      "Толщина": "1.5 мм",
+      "Размеры": "54×86 мм",
+      "Материал": "PVC",
+      "Дальность считывания": "до 10 см"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/rfid-card.png",
+    "source": "https://zkteco.technology/en/product/id-mifare-hid-card/"
+  },
+  {
+    "name": "ZKTeco EB1",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Кнопка выхода (сверхтонкая)",
+      "Размеры": "70×14×20 мм",
+      "Монтаж": "Накладной",
+      "Применение": "Системы контроля доступа"
+    },
+    "image_url": "https://new-website-file.s3.ap-southeast-1.amazonaws.com/images/20211214/421049073f89869ce4970934beea4bd5.jpg",
+    "source": "https://www.zkteco.com/en/ExitButton"
+  },
+  {
+    "name": "ZKTeco UHF1-Tag3",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Пассивная UHF-метка для управления въездом транспорта",
+      "Частота": "860–928 МГц",
+      "Протокол": "ISO18000-6C (EPC Gen2)",
+      "Чип": "G2XM",
+      "Дальность считывания": "до 10 м",
+      "Размеры": "249×13.8×18 мм",
+      "Сохранность данных": "5 лет",
+      "Рабочая температура": "–30°C до +55°C"
+    },
+    "image_url": "https://zkteco.systems/wp-content/uploads/resized/400_400_201904uhf1-tag3-card-500x500.webp",
+    "source": "https://zkteco.systems/en/product/uhf1-tag3/"
+  },
+  {
+    "name": "ZKTeco TLEB102",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Бесконтактная кнопка выхода (инфракрасная)",
+      "Технология": "Инфракрасный датчик",
+      "Дальность обнаружения": "2–10 см",
+      "Напряжение": "DC 9–16 В",
+      "Ток": "2 А",
+      "Контакты": "NO/NC/COM",
+      "Индикация": "Синий (ожидание) / Красный (открытие)",
+      "Материал корпуса": "Нержавеющая сталь SUS304",
+      "Размеры": "115×70×38 мм",
+      "Рабочая температура": "–20°C до +50°C"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/2022/01/4e8977c7d237f5178573fe779cc9235d.jpg",
+    "source": "https://zkteco.technology/en/product/tleb102/"
+  },
+  {
+    "name": "ZKTeco TLEB101",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Бесконтактная кнопка выхода (инфракрасная)",
+      "Технология": "Инфракрасный датчик",
+      "Дальность обнаружения": "2–10 см",
+      "Напряжение": "DC 9–16 В",
+      "Ток": "2 А",
+      "Контакты": "NO/NC/COM",
+      "Материал корпуса": "Нержавеющая сталь SUS304",
+      "Размеры": "86×86×38 мм",
+      "Рабочая температура": "–20°C до +50°C"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/2022/01/ffdb8395d3864f8d73d5762b2c0af7db.jpg",
+    "source": "https://zkteco.technology/en/product/tleb101/"
+  },
+  {
+    "name": "ZKTeco EB3",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Механическая кнопка выхода",
+      "Напряжение": "DC 12–24 В",
+      "Ток": "5 А",
+      "Материал": "Пластик",
+      "Рабочая температура": "–10°C до +55°C"
+    },
+    "image_url": "https://new-website-file.s3.ap-southeast-1.amazonaws.com/images/20211214/421049073f89869ce4970934beea4bd5.jpg",
+    "source": "https://www.zkteco.com/en/ExitButton"
+  },
+  {
+    "name": "ZKTeco KR100E",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Считыватель карт доступа EM (125 кГц)",
+      "Частота": "125 кГц",
+      "Дальность считывания": "до 10 см",
+      "Время считывания": "≤200 мс",
+      "Выход": "Wiegand 26 бит",
+      "Питание": "DC 6–14 В",
+      "Степень защиты": "IP65",
+      "Рабочая температура": "–10°C до +65°C"
+    },
+    "image_url": "https://zkteco.systems/wp-content/uploads/resized/400_400_20190815074.webp",
+    "source": "https://zkteco.systems/en/product/kr100-id/"
+  },
+  {
+    "name": "ZKTeco ZKABK900A-R",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Аварийная кнопка разбития стекла (красная)",
+      "Размеры": "86×86×52 мм",
+      "Ток": "AC 125–250 В, 3 А",
+      "Материал": "Огнестойкий пластик",
+      "Контакты": "NO/NC/COM",
+      "Рабочая температура": "–10°C до +55°C",
+      "Цвет": "Красный"
+    },
+    "image_url": "https://new-website-file.s3.ap-southeast-1.amazonaws.com/images/20211214/418d782a7c9deb82efb247b1657f3824.jpg",
+    "source": "https://www.zkteco.com/en/ExitButton/ZKABK900A-R-G"
+  },
+  {
+    "name": "ZKTeco KR102M",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Считыватель карт доступа Mifare (13.56 МГц)",
+      "Частота": "13.56 МГц",
+      "Дальность считывания": "до 5 см",
+      "Время считывания": "300 мс",
+      "Выход": "Wiegand 34 бит",
+      "Питание": "DC 6–14 В",
+      "Степень защиты": "IP65",
+      "Размеры": "77.5×42.8×16.5 мм",
+      "Вес": "50 г",
+      "Рабочая температура": "–10°C до +70°C"
+    },
+    "image_url": "https://zkteco.systems/wp-content/uploads/resized/400_400_20190815074.webp",
+    "source": "https://zkteco.co.za/kr102.html"
+  },
+  {
+    "name": "ZKTeco KR102E",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Считыватель карт доступа EM (125 кГц)",
+      "Частота": "125 кГц",
+      "Дальность считывания": "до 10 см",
+      "Время считывания": "300 мс",
+      "Выход": "Wiegand 26 бит",
+      "Питание": "DC 6–14 В",
+      "Степень защиты": "IP65",
+      "Размеры": "77.5×42.8×16.5 мм",
+      "Вес": "50 г",
+      "Рабочая температура": "–10°C до +70°C"
+    },
+    "image_url": "https://zkteco.systems/wp-content/uploads/resized/400_400_20190815074.webp",
+    "source": "https://zkteco.co.za/kr102.html"
+  },
+  {
+    "name": "ZKTeco EB102",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Механическая кнопка выхода с LED (нержавеющая сталь)",
+      "Напряжение": "DC 12–24 В",
+      "Ток": "5 А",
+      "LED": "Синий, 40 000 ч",
+      "Материал корпуса": "Нержавеющая сталь 1.7 мм",
+      "Размеры": "115×70×28.6 мм",
+      "Ударостойкость": "IK10",
+      "Рабочая температура": "–20°C до +50°C"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/2022/01/f3fe650f7f96fae88f396cb0ab8fe63c.jpg",
+    "source": "https://zkteco.technology/en/product/eb102/"
+  },
+  {
+    "name": "ZKTeco KR100M",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Считыватель карт доступа Mifare (13.56 МГц)",
+      "Частота": "13.56 МГц",
+      "Дальность считывания": "до 5 см",
+      "Время считывания": "≤200 мс",
+      "Выход": "Wiegand 34 бит",
+      "Питание": "DC 6–14 В",
+      "Степень защиты": "IP65",
+      "Рабочая температура": "–10°C до +65°C"
+    },
+    "image_url": "https://zkteco.systems/wp-content/uploads/resized/400_400_20190815074.webp",
+    "source": "https://zkteco.systems/en/product/kr100-id/"
+  },
+  {
+    "name": "ZKTeco ZKABK900A-G",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Аварийная кнопка разбития стекла (зелёная)",
+      "Размеры": "86×86×52 мм",
+      "Ток": "AC 125–250 В, 3 А",
+      "Материал": "Огнестойкий пластик",
+      "Контакты": "NO/NC/COM",
+      "Рабочая температура": "–10°C до +55°C",
+      "Цвет": "Зелёный"
+    },
+    "image_url": "https://new-website-file.s3.ap-southeast-1.amazonaws.com/images/20211214/442e6c0c3c302ea4fcc8afc9b6cfb6e0.jpg",
+    "source": "https://www.zkteco.com/en/ExitButton/ZKABK900A-R-G"
+  },
+  {
+    "name": "ZKTeco KR600E",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Считыватель карт доступа EM (125 кГц), Wiegand/OSDP",
+      "Частота": "125 кГц",
+      "Дальность считывания": "до 10 см",
+      "Время считывания": "≤300 мс",
+      "Выход": "Wiegand 26 бит (по умолчанию)",
+      "Питание": "DC 6–14 В",
+      "Степень защиты": "IP65",
+      "Рабочая температура": "–10°C до +65°C"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/2022/01/38735151a7f4874167b99bb3428d37cd.png",
+    "source": "https://www.zkteco.com/en/RFIDReader/KR600-Series"
+  },
+  {
+    "name": "ZKTeco ZK-D100S",
+    "brand": "ZKTeco",
+    "specs": {
+      "Тип": "Ручной металлодетектор",
+      "Рабочая частота": "22 кГц",
+      "Питание": "Аккумулятор 9В (NiMH)",
+      "Ток потребления": "<50 мА",
+      "Уровень звука тревоги": "≥75 дБ(A)",
+      "Степень защиты": "IP31",
+      "Размеры": "410×85×45 мм",
+      "Время зарядки": "4–6 часов",
+      "Режимы тревоги": "Звук+свет или вибрация+свет"
+    },
+    "image_url": "https://zkteco.technology/wp-content/uploads/2022/01/8508b547dfbb4a190135cf3293265b65.png",
+    "source": "https://zkteco.technology/en/product/zk-d100s/"
+  },
+  {
+    "name": "Dahua DHI-IC-SM",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "RFID-брелок доступа (Mifare)",
+      "Стандарт": "Mifare S50 (1K)",
+      "Частота": "13.56 МГц",
+      "Совместимость": "ISO/IEC 14443A",
+      "Дальность считывания": "~10 см",
+      "Размеры": "30×40 мм"
+    },
+    "image_url": "",
+    "source": "https://www.surveillance-video.com/security-ic-sm.html"
+  },
+  {
+    "name": "Dahua 1.2.49.08.12418-000",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Программная лицензия Dahua",
+      "Примечание": "Лицензионный ключ или дополнительный модуль ПО DSS/SmartPSS"
+    },
+    "image_url": "",
+    "source": "https://licensing.dahuasecurity.com/"
+  },
+  {
+    "name": "Dahua DHI-ARD1731-W2",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Беспроводной PIR-детектор со встроенной камерой",
+      "Матрица": "2 МП CMOS",
+      "Разрешение снимка": "1600×1200 / 1280×960 / 640×480",
+      "ИК-подсветка": "до 12 м",
+      "Дальность обнаружения": "12 м, 86°",
+      "Скорость обнаружения": "0.3–3 м/с",
+      "Иммунитет к животным": "≤18 кг",
+      "Частота RF": "433.1–434.6 МГц",
+      "Дальность RF": "до 1200 м",
+      "Питание": "CR123A×3",
+      "Срок службы батареи": "4 года",
+      "Размеры": "71×53.2×127.6 мм",
+      "Вес": "202 г",
+      "Рабочая температура": "–10°C до +55°C"
+    },
+    "image_url": "https://materialfile.dahuasecurity.com/uploads/cpq/47867/image/ARD1731-W2_View_Front-logo.png",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Alarms/Wireless-Products/Detectors/ARD1731-W2"
+  },
+  {
+    "name": "Dahua 27'' DHI-LM27-E230C",
+    "brand": "Dahua",
+    "specs": {
+      "Тип": "Изогнутый игровой монитор 27\"",
+      "Панель": "VA",
+      "Разрешение": "1920×1080 (FHD)",
+      "Кривизна": "1500R",
+      "Яркость": "250 кд/м²",
+      "Контраст": "4000:1",
+      "Частота обновления": "165 Гц",
+      "Время отклика": "5 мс (OD)",
+      "Угол обзора": "178°(Г)/178°(В)",
+      "Интерфейсы": "DP 1.2 ×1, HDMI 1.4 ×2",
+      "Питание": "DC 12В, 3А",
+      "Потребление": "31 Вт (тип.), 42 Вт (макс.)",
+      "Размеры": "613×365×79.57 мм",
+      "Вес нетто": "3.98 кг",
+      "VESA": "75×75 мм"
+    },
+    "image_url": "",
+    "source": "https://www.dahuasecurity.com/products/All-Products/Monitors/Gaming-Monitor/LM27-E230C"
+  }
+]
