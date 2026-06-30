@@ -1,0 +1,1053 @@
+{
+  "ZKTeco CR20MW": {
+    "category": "СКУД",
+    "device_type": "Считыватель настольный USB",
+    "verification": "RFID Mifare 13.56МГц",
+    "interface": "USB",
+    "power": "5В (USB)",
+    "temp_range": "0...+70°C",
+    "dimensions": "117×66×17 мм",
+    "price": "9 270"
+  },
+  "ZKTeco TS1000 Pro MF": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "verification": "EM-Marine",
+    "capacity": "30 чел/мин",
+    "interface": "Wiegand",
+    "power": "110-220В",
+    "temp_range": "-28...+60°C",
+    "dimensions": "810×1010×520 мм",
+    "weight": "34 кг"
+  },
+  "ZKTeco ProFace X": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Лицо, EM-Marine",
+    "capacity": "30000 лиц, 50000 карт",
+    "interface": "RS232/485, TCP/IP, USB, Wiegand",
+    "display": "8\" IPS LCD тачскрин",
+    "power": "12В",
+    "temp_range": "-30...+60°C",
+    "ip_rating": "IP68",
+    "dimensions": "227×143×26 мм",
+    "weight": "1.96 кг",
+    "price": "139 040"
+  },
+  "ZKTeco ProFace X (TD)": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Лицо, EM-Marine, температура",
+    "capacity": "30000 лиц, 50000 карт",
+    "interface": "RS232/485, TCP/IP, USB, Wiegand",
+    "display": "8\" IPS LCD тачскрин",
+    "power": "12В",
+    "temp_range": "-30...+60°C",
+    "ip_rating": "IP68",
+    "dimensions": "227×143×26 мм",
+    "weight": "1.96 кг"
+  },
+  "ZKTeco F16": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Отпечаток, EM-Marine",
+    "capacity": "3000 отпечатков, 30000 карт",
+    "interface": "RS485, TCP/IP, Wiegand",
+    "power": "12В",
+    "temp_range": "0...+45°C",
+    "ip_rating": "IP65",
+    "dimensions": "62.5×185×41.5 мм",
+    "weight": "0.6 кг",
+    "price": "19 610"
+  },
+  "ZKTeco K40": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Отпечаток",
+    "capacity": "1000 отпечатков, 80000 событий",
+    "interface": "TCP/IP, USB",
+    "display": "2.8\" TFT цветной",
+    "power": "12В",
+    "temp_range": "0...+45°C",
+    "dimensions": "184×136×37.6 мм",
+    "weight": "0.94 кг",
+    "price": "19 610"
+  },
+  "ZKTeco BGM2000R": {
+    "category": "СКУД",
+    "device_type": "Шлагбаум электромеханический",
+    "power": "220В (мотор 24В)",
+    "temp_range": "-30...+75°C",
+    "ip_rating": "IP54",
+    "dimensions": "350×306×1070 мм",
+    "price": "156 860"
+  },
+  "ZKTeco BGM2000L": {
+    "category": "СКУД",
+    "device_type": "Шлагбаум электромеханический",
+    "power": "220В (мотор 24В)",
+    "temp_range": "-30...+75°C",
+    "ip_rating": "IP54",
+    "dimensions": "350×306×1070 мм"
+  },
+  "ZKTeco BGM1000": {
+    "category": "СКУД",
+    "device_type": "Шлагбаум электромеханический",
+    "power": "220В",
+    "temp_range": "-30...+75°C",
+    "ip_rating": "IP54"
+  },
+  "ZKTeco AMD-1800": {
+    "category": "СКУД",
+    "device_type": "Металлодетектор стационарный",
+    "capacity": "18 зон детекции",
+    "display": "3.5\" LCD",
+    "power": "12В",
+    "temp_range": "-20...+55°C",
+    "dimensions": "520×816×2218 мм",
+    "weight": "52 кг",
+    "price": "112 700"
+  },
+  "ZKTeco D100S": {
+    "category": "СКУД",
+    "device_type": "Металлодетектор ручной",
+    "power": "9В (батарея)",
+    "temp_range": "-15...+55°C"
+  },
+  "ZKTeco KR500E": {
+    "category": "СКУД",
+    "device_type": "Считыватель EM-Marine",
+    "verification": "RFID EM-Marine",
+    "interface": "Wiegand 26",
+    "power": "12В",
+    "temp_range": "-20...+65°C",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco KR500M": {
+    "category": "СКУД",
+    "device_type": "Считыватель Mifare",
+    "verification": "RFID Mifare",
+    "interface": "Wiegand 26",
+    "power": "12В",
+    "temp_range": "-20...+65°C",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco CR10MW": {
+    "category": "СКУД",
+    "device_type": "Считыватель настольный USB",
+    "verification": "RFID Mifare",
+    "interface": "USB",
+    "power": "5В (USB)",
+    "temp_range": "0...+70°C"
+  },
+  "ZKTeco CR30W": {
+    "category": "СКУД",
+    "device_type": "Считыватель Wiegand",
+    "verification": "RFID",
+    "interface": "Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco CR40W": {
+    "category": "СКУД",
+    "device_type": "Считыватель Wiegand",
+    "verification": "RFID",
+    "interface": "Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco SBT2011S": {
+    "category": "СКУД",
+    "device_type": "Турникет-калитка распашной",
+    "capacity": "30 чел/мин",
+    "verification": "EM-Marine/Mifare",
+    "power": "220В",
+    "temp_range": "-15...+60°C",
+    "dimensions": "202×187×1109 мм",
+    "weight": "24 кг",
+    "price": "249 550"
+  },
+  "ZKTeco FBL1011": {
+    "category": "СКУД",
+    "device_type": "Турникет с откидными створками",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco FBL2011": {
+    "category": "СКУД",
+    "device_type": "Турникет с откидными створками",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco FBL3222": {
+    "category": "СКУД",
+    "device_type": "Скоростной проход",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco FBL4022": {
+    "category": "СКУД",
+    "device_type": "Скоростной проход",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco TS1011": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco TS1022": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco TS1044": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная полноростовая",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco TS1100": {
+    "category": "СКУД",
+    "device_type": "Турникет-трипод",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco TS1100M": {
+    "category": "СКУД",
+    "device_type": "Турникет-трипод",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco TS1200": {
+    "category": "СКУД",
+    "device_type": "Турникет-трипод",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "ZKTeco TS2000 Pro": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В",
+    "temp_range": "-28...+60°C"
+  },
+  "ZKTeco TS2011": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В"
+  },
+  "ZKTeco TS2022": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В"
+  },
+  "ZKTeco TS2100": {
+    "category": "СКУД",
+    "device_type": "Турникет-трипод",
+    "power": "220В"
+  },
+  "ZKTeco TS2200": {
+    "category": "СКУД",
+    "device_type": "Турникет-трипод",
+    "power": "220В"
+  },
+  "ZKTeco TS5000A Pro MF": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная полноростовая",
+    "verification": "EM-Marine/Mifare",
+    "power": "220В"
+  },
+  "ZKTeco TS5033A": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная полноростовая",
+    "power": "220В"
+  },
+  "ZKTeco TS5200A Pro MF": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная полноростовая",
+    "verification": "EM-Marine/Mifare",
+    "power": "220В"
+  },
+  "ZKTeco TS8200 Pro MF": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "verification": "EM-Marine/Mifare",
+    "power": "220В"
+  },
+  "ZKTeco TS8200A": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В"
+  },
+  "ZKTeco TSA32": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В"
+  },
+  "ZKTeco TSA70": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "power": "220В"
+  },
+  "ZKTeco SpeedFace V5L (TD)": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Лицо, ладонь, карта, температура",
+    "interface": "TCP/IP, USB, Wiegand, RS485",
+    "display": "5\" тачскрин",
+    "power": "12В",
+    "ip_rating": "IP68"
+  },
+  "ZKTeco SpeedFace V5L (ZAM)": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Лицо, ладонь, карта",
+    "interface": "TCP/IP, USB, Wiegand, RS485",
+    "display": "5\" тачскрин",
+    "power": "12В",
+    "ip_rating": "IP68"
+  },
+  "ZKTeco SF300": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Отпечаток, EM-Marine",
+    "interface": "TCP/IP, USB, Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco SF400": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Отпечаток, EM-Marine",
+    "interface": "TCP/IP, USB, Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco SA32-E": {
+    "category": "СКУД",
+    "device_type": "Автономный контроллер",
+    "verification": "EM-Marine",
+    "interface": "Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco BR1011": {
+    "category": "СКУД",
+    "device_type": "Шлагбаум автоматический",
+    "power": "220В",
+    "ip_rating": "IP54"
+  },
+  "ZKTeco BS1300": {
+    "category": "СКУД",
+    "device_type": "Боллард автоматический",
+    "power": "220В"
+  },
+  "ZKTeco UHF 5E Pro": {
+    "category": "СКУД",
+    "device_type": "UHF считыватель",
+    "verification": "UHF RFID",
+    "interface": "Wiegand, RS485, TCP/IP",
+    "power": "12В"
+  },
+  "ZKTeco UHF1-Tag9": {
+    "category": "СКУД",
+    "device_type": "UHF карта/метка",
+    "verification": "UHF RFID"
+  },
+  "ZKTeco WR100": {
+    "category": "СКУД",
+    "device_type": "Конвертер Wiegand-RS485",
+    "interface": "Wiegand, RS485",
+    "power": "12В"
+  },
+  "ZKTeco NFC reader": {
+    "category": "СКУД",
+    "device_type": "NFC считыватель",
+    "verification": "NFC",
+    "interface": "Wiegand",
+    "power": "12В"
+  },
+  "ZKTeco PA10": {
+    "category": "СКУД",
+    "device_type": "Защитная крышка для считывателя",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco SB01": {
+    "category": "СКУД",
+    "device_type": "Монтажная коробка"
+  },
+  "ZKTeco MB10-VL": {
+    "category": "СКУД",
+    "device_type": "Монтажная панель",
+    "power": "12В"
+  },
+  "ZKTeco MB20-VL": {
+    "category": "СКУД",
+    "device_type": "Монтажная панель",
+    "power": "12В"
+  },
+  "ZKTeco MB360": {
+    "category": "СКУД",
+    "device_type": "Монтажный кронштейн"
+  },
+  "ZKTeco MB460": {
+    "category": "СКУД",
+    "device_type": "Монтажный кронштейн"
+  },
+  "ZKTeco D3180": {
+    "category": "СКУД",
+    "device_type": "Металлодетектор стационарный",
+    "power": "220В"
+  },
+  "ZKTeco TFG320": {
+    "category": "СКУД",
+    "device_type": "Турникет скоростной",
+    "power": "220В"
+  },
+  "ZKTeco KR801-M": {
+    "category": "СКУД",
+    "device_type": "Считыватель Mifare",
+    "verification": "RFID Mifare",
+    "interface": "Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "ZKTeco AL-100PF": {
+    "category": "СКУД",
+    "device_type": "Электрозащёлка",
+    "power": "12В"
+  },
+  "ZKTeco AL-130NC": {
+    "category": "СКУД",
+    "device_type": "Электрозащёлка",
+    "power": "12В"
+  },
+  "ZKTeco AL-130NO": {
+    "category": "СКУД",
+    "device_type": "Электрозащёлка",
+    "power": "12В"
+  },
+  "ZKTeco AL-131NC": {
+    "category": "СКУД",
+    "device_type": "Электрозащёлка",
+    "power": "12В"
+  },
+  "ZKTeco AL-131NO": {
+    "category": "СКУД",
+    "device_type": "Электрозащёлка",
+    "power": "12В"
+  },
+  "ZKTeco AL-150NC": {
+    "category": "СКУД",
+    "device_type": "Электромагнитный замок",
+    "power": "12В"
+  },
+  "ZKTeco AL-150NO": {
+    "category": "СКУД",
+    "device_type": "Электромагнитный замок",
+    "power": "12В"
+  },
+  "ZKTeco AL-280S": {
+    "category": "СКУД",
+    "device_type": "Электромагнитный замок",
+    "power": "12В"
+  },
+  "ZKTeco AL-400D": {
+    "category": "СКУД",
+    "device_type": "Электромагнитный замок",
+    "power": "12-24В"
+  },
+  "ZKTeco AL-400ND": {
+    "category": "СКУД",
+    "device_type": "Электромагнитный замок",
+    "power": "12-24В"
+  },
+  "Optimus 12/1.0 (В0000003998)": {
+    "category": "Блок питания",
+    "device_type": "Источник питания стабилизированный",
+    "power": "вход 100-240В, выход 12В/1А",
+    "ip_rating": "IP54",
+    "temp_range": "-10...+40°C",
+    "dimensions": "60×39×36 мм",
+    "weight": "0.146 кг",
+    "price": "365"
+  },
+  "Optimus 12/5.0 (В0000011719)": {
+    "category": "Блок питания",
+    "device_type": "Источник питания стабилизированный",
+    "power": "вход 100-240В, выход 12В/5А",
+    "ip_rating": "IP54",
+    "temp_range": "-10...+40°C",
+    "dimensions": "118×52×33 мм",
+    "weight": "0.26 кг",
+    "price": "1 173"
+  },
+  "Optimus 12/1.3 mini (В0000006397)": {
+    "category": "Блок питания",
+    "device_type": "Источник питания стабилизированный",
+    "power": "вход 100-240В, выход 12В/1.3А",
+    "ip_rating": "IP54",
+    "temp_range": "-10...+40°C"
+  },
+  "Optimus 12/10.0 (В0000013991)": {
+    "category": "Блок питания",
+    "device_type": "Источник питания стабилизированный",
+    "power": "вход 100-240В, выход 12В/10А",
+    "ip_rating": "IP54",
+    "temp_range": "-10...+40°C",
+    "price": "1 569"
+  },
+  "Optimus 12/4.0 (В0000016261)": {
+    "category": "Блок питания",
+    "device_type": "Источник питания стабилизированный",
+    "power": "вход 100-240В, выход 12В/4А",
+    "ip_rating": "IP54",
+    "temp_range": "-10...+40°C",
+    "price": "1 117"
+  },
+  "Optimus EMG-280-S/300-WS (В0000017670)": {
+    "category": "СКУД",
+    "device_type": "Электромагнитный замок",
+    "power": "12В, 380мА",
+    "temp_range": "-40...+55°C",
+    "dimensions": "250×48×27 мм",
+    "weight": "1.9 кг",
+    "price": "2 819"
+  },
+  "Optimus EMG-180-S/200-WS (В0000017671)": {
+    "category": "СКУД",
+    "device_type": "Электромагнитный замок",
+    "power": "12В, 280мА",
+    "temp_range": "-40...+55°C"
+  },
+  "Optimus VMH-7.1 (b) (В0000011437)": {
+    "category": "Домофония",
+    "device_type": "Монитор видеодомофона",
+    "display": "7\" TFT LCD цветной 1024x600",
+    "resolution": "1920x1080 (запись)",
+    "power": "100-240В",
+    "temp_range": "0...+50°C",
+    "dimensions": "175×122×20 мм",
+    "weight": "0.524 кг",
+    "price": "12 173"
+  },
+  "Optimus B-2T (AHD/TVI/CVI) (В0000013918)": {
+    "category": "Камера",
+    "device_type": "Видеокамера AHD/TVI/CVI/CVBS",
+    "resolution": "2Мп",
+    "power": "12В"
+  },
+  "Optimus 1250 (В0000004001)": {
+    "category": "Блок питания",
+    "device_type": "Источник бесперебойного питания",
+    "power": "вход 220В, выход 12В/5А"
+  },
+  "Optimus 1250-ODW (В0000013599)": {
+    "category": "Блок питания",
+    "device_type": "Источник бесперебойного питания уличный",
+    "power": "вход 220В, выход 12В/5А",
+    "temp_range": "-40...+50°C"
+  },
+  "Optimus 1220-RM-7 (N0000007872)": {
+    "category": "Блок питания",
+    "device_type": "Источник бесперебойного питания в стойку",
+    "power": "вход 220В, выход 12В/2А"
+  },
+  "Optimus 1230-RM-7 (В0000004010)": {
+    "category": "Блок питания",
+    "device_type": "Источник бесперебойного питания в стойку",
+    "power": "вход 220В, выход 12В/3А"
+  },
+  "Optimus M-6 (В0000004927)": {
+    "category": "СКУД",
+    "device_type": "Кнопка выхода"
+  },
+  "Optimus M-7 (В0000004925)": {
+    "category": "СКУД",
+    "device_type": "Кнопка выхода"
+  },
+  "Optimus Mifare (В0000012273)": {
+    "category": "СКУД",
+    "device_type": "Считыватель Mifare",
+    "verification": "RFID Mifare",
+    "interface": "Wiegand"
+  },
+  "Optimus Mini (В0000018518)": {
+    "category": "СКУД",
+    "device_type": "Считыватель EM-Marine",
+    "verification": "RFID EM-Marine",
+    "interface": "Wiegand"
+  },
+  "Optimus RC-200 (В0000005530)": {
+    "category": "СКУД",
+    "device_type": "Контроллер доступа",
+    "interface": "Wiegand, RS485",
+    "power": "12В"
+  },
+  "Optimus SM1 (12B) (В0000003901)": {
+    "category": "Блок питания",
+    "device_type": "Блок питания для замка",
+    "power": "выход 12В"
+  },
+  "Optimus DC-65 V.1 Silver (В0000018684)": {
+    "category": "Домофония",
+    "device_type": "Вызывная панель видеодомофона",
+    "resolution": "2Мп",
+    "power": "12В"
+  },
+  "Optimus PB-01 (В0000020291)": {
+    "category": "СКУД",
+    "device_type": "Кнопка выхода пьезоэлектрическая"
+  },
+  "Optimus PD-G1/2.5POE (В0000013601)": {
+    "category": "Блок питания",
+    "device_type": "PoE инжектор",
+    "power": "вход 100-240В, выход PoE 48В"
+  },
+  "Optimus U2I-8F2b/1F (В0000015249) (9xFE, PoE, 120 Вт)": {
+    "category": "Коммутатор",
+    "device_type": "PoE коммутатор неуправляемый",
+    "ports": "8xFE PoE + 2x Uplink + 1xSFP",
+    "poe_power": "120 Вт",
+    "managed": "Неуправляемый",
+    "power": "48-57В"
+  },
+  "HiWatch DS-I225(D)": {
+    "category": "Камера",
+    "form": "PTZ",
+    "resolution": "2Мп",
+    "sensor": "1/2.8\" CMOS",
+    "lens": "4.8-120мм (25x)",
+    "codec": "H.265+, H.265, H.264+, H.264",
+    "ir": "до 100м",
+    "sensitivity": "0.005 лк",
+    "power": "PoE+, 12В",
+    "ip_rating": "IP66",
+    "temp_range": "-40...+65°C",
+    "mic": "Да",
+    "dimensions": "164.5×290 мм",
+    "weight": "3.7 кг",
+    "price": "21 500"
+  },
+  "Hikvision DS-7616NI-Q1(D)": {
+    "category": "Регистратор",
+    "channels": "16",
+    "bandwidth": "160 Мбит/с",
+    "codec": "H.265+, H.265, H.264+, H.264",
+    "storage": "1 SATA до 8 ТБ",
+    "video_out": "1 HDMI, 1 VGA",
+    "power": "12В",
+    "temp_range": "-10...+55°C",
+    "dimensions": "320×240×48 мм",
+    "weight": "1.66 кг",
+    "price": "8 688"
+  },
+  "Optimus \"Выход\" (пластик) V.2 (В0000018006)": {
+    "category": "СКУД",
+    "device_type": "Табло \"Выход\"",
+    "power": "12В"
+  },
+  "Optimus В0000015728": {
+    "category": "Аксессуар",
+    "device_type": "Аксессуар"
+  },
+  "Belpark uni 4-6": {
+    "category": "Камера",
+    "device_type": "Видеокамера"
+  },
+  "Temid BG300 Mainboard": {
+    "category": "СКУД",
+    "device_type": "Плата управления шлагбаума",
+    "interface": "RS485"
+  },
+  "Temid BGM1000 Power supply (12V)": {
+    "category": "СКУД",
+    "device_type": "Блок питания шлагбаума",
+    "power": "вход 220В, выход 12В"
+  },
+  "Temid BGM1000 Straight Boom 4.5м": {
+    "category": "СКУД",
+    "device_type": "Стрела прямая 4.5м",
+    "dimensions": "4500 мм"
+  },
+  "Temid BGM2000L Boom 3m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 3м (левая)",
+    "dimensions": "3000 мм"
+  },
+  "Temid BGM2000R 4м": {
+    "category": "СКУД",
+    "device_type": "Шлагбаум электромеханический правый",
+    "power": "220В (мотор 24В)",
+    "temp_range": "-30...+75°C",
+    "ip_rating": "IP54"
+  },
+  "Temid BGM2000R Boom 3m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 3м (правая)",
+    "dimensions": "3000 мм"
+  },
+  "Temid BGM300 Power supply (24V)": {
+    "category": "СКУД",
+    "device_type": "Блок питания шлагбаума",
+    "power": "вход 220В, выход 24В"
+  },
+  "Temid BGM300 Telescopic Boom 6м": {
+    "category": "СКУД",
+    "device_type": "Стрела телескопическая 6м",
+    "dimensions": "6000 мм"
+  },
+  "Temid BS-852B31C-S2-MI-S": {
+    "category": "СКУД",
+    "device_type": "Считыватель Mifare",
+    "verification": "RFID Mifare",
+    "interface": "Wiegand",
+    "ip_rating": "IP65"
+  },
+  "Temid CM-180": {
+    "category": "СКУД",
+    "device_type": "Доводчик дверной",
+    "weight": "1.5 кг"
+  },
+  "Temid CMP200 Telescopic Boom Bracket": {
+    "category": "СКУД",
+    "device_type": "Кронштейн телескопической стрелы"
+  },
+  "Temid EX-803A": {
+    "category": "СКУД",
+    "device_type": "Кнопка выхода",
+    "power": "12В"
+  },
+  "Temid Horus E1 RFID [EM]": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Лицо, EM-Marine",
+    "interface": "TCP/IP, USB, Wiegand",
+    "display": "5\" тачскрин",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid KJZ-03": {
+    "category": "СКУД",
+    "device_type": "Кронштейн для турникета"
+  },
+  "Temid LB-12": {
+    "category": "СКУД",
+    "device_type": "Аккумулятор резервный",
+    "power": "12В"
+  },
+  "Temid MDS100": {
+    "category": "СКУД",
+    "device_type": "Считыватель карт",
+    "verification": "RFID",
+    "interface": "RS485",
+    "power": "12В"
+  },
+  "Temid MR100 [IC]": {
+    "category": "СКУД",
+    "device_type": "Считыватель Mifare",
+    "verification": "RFID Mifare",
+    "interface": "Wiegand, RS485",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid Mars-S100 doors": {
+    "category": "СКУД",
+    "device_type": "Датчик двери магнитоконтактный",
+    "interface": "NC/NO"
+  },
+  "Temid ProID10WM": {
+    "category": "СКУД",
+    "device_type": "Считыватель Mifare влагозащищённый",
+    "verification": "RFID Mifare",
+    "interface": "Wiegand",
+    "power": "12В",
+    "ip_rating": "IP68"
+  },
+  "Temid QR600-VK [QR] [ID]": {
+    "category": "СКУД",
+    "device_type": "Считыватель QR-код + карта",
+    "verification": "QR-код, EM-Marine",
+    "interface": "Wiegand, RS485",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid SBTL500": {
+    "category": "СКУД",
+    "device_type": "Турникет-калитка",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "Temid SF300 [ID]": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Отпечаток, EM-Marine",
+    "interface": "TCP/IP, USB, Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid SenseFace 7A": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Лицо, карта",
+    "display": "7\" тачскрин",
+    "interface": "TCP/IP, Wiegand",
+    "power": "12В"
+  },
+  "Temid SpeedFace-V5L [ID]": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Лицо, ладонь, EM-Marine",
+    "interface": "TCP/IP, USB, Wiegand, RS485",
+    "display": "5\" тачскрин",
+    "power": "12В",
+    "ip_rating": "IP68"
+  },
+  "Temid SpeedPalm-V5L": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал",
+    "verification": "Ладонь, лицо",
+    "interface": "TCP/IP, USB, Wiegand",
+    "display": "5\" тачскрин",
+    "power": "12В",
+    "ip_rating": "IP68"
+  },
+  "Temid T-BGM1000 LED Boom (4.5m)": {
+    "category": "СКУД",
+    "device_type": "Стрела LED 4.5м",
+    "dimensions": "4500 мм"
+  },
+  "Temid T-BGM2000 Round Boom 4m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 4м",
+    "dimensions": "4000 мм"
+  },
+  "Temid T-LB-12": {
+    "category": "СКУД",
+    "device_type": "Аккумулятор резервный",
+    "power": "12В"
+  },
+  "Temid T-MA300": {
+    "category": "СКУД",
+    "device_type": "Считыватель отпечатков пальцев",
+    "verification": "Отпечаток, EM-Marine",
+    "interface": "TCP/IP, RS485, Wiegand",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid T-MDS100": {
+    "category": "СКУД",
+    "device_type": "Считыватель карт",
+    "verification": "RFID",
+    "interface": "RS485",
+    "power": "12В"
+  },
+  "Temid T-MR100 [ID]": {
+    "category": "СКУД",
+    "device_type": "Считыватель EM-Marine",
+    "verification": "RFID EM-Marine",
+    "interface": "Wiegand, RS485",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid T-MR1020 [ID] [MF]": {
+    "category": "СКУД",
+    "device_type": "Считыватель EM-Marine + Mifare",
+    "verification": "RFID EM-Marine, Mifare",
+    "interface": "Wiegand, RS485",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid T-Manual button": {
+    "category": "СКУД",
+    "device_type": "Кнопка ручного управления"
+  },
+  "Temid T-PD-300": {
+    "category": "СКУД",
+    "device_type": "Петлевой детектор",
+    "power": "12-24В"
+  },
+  "Temid T-PSA02": {
+    "category": "СКУД",
+    "device_type": "Фотоэлемент безопасности",
+    "power": "12-24В"
+  },
+  "Temid T-Parking Warning Light": {
+    "category": "СКУД",
+    "device_type": "Световой индикатор парковки",
+    "power": "12В"
+  },
+  "Temid T-ProID20WE-RS (ID RS485)": {
+    "category": "СКУД",
+    "device_type": "Считыватель EM-Marine влагозащищённый",
+    "verification": "RFID EM-Marine",
+    "interface": "RS485",
+    "power": "12В",
+    "ip_rating": "IP68"
+  },
+  "Temid T-QR50BE": {
+    "category": "СКУД",
+    "device_type": "Считыватель QR-код",
+    "verification": "QR-код, штрих-код",
+    "interface": "Wiegand, RS485",
+    "power": "12В"
+  },
+  "Temid T-SBTL500": {
+    "category": "СКУД",
+    "device_type": "Турникет-калитка",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "Temid T-inBio260 Pro Plus": {
+    "category": "СКУД",
+    "device_type": "Контроллер доступа на 2 двери",
+    "capacity": "60000 карт, 200000 событий",
+    "interface": "TCP/IP, RS485, Wiegand",
+    "power": "12В"
+  },
+  "Temid T-inBio460 Pro Plus": {
+    "category": "СКУД",
+    "device_type": "Контроллер доступа на 4 двери",
+    "capacity": "60000 карт, 200000 событий",
+    "interface": "TCP/IP, RS485, Wiegand",
+    "power": "12В"
+  },
+  "Temid TS1000M Pro": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная",
+    "verification": "EM-Marine/Mifare",
+    "power": "220В",
+    "temp_range": "-28...+60°C"
+  },
+  "Temid VR10 Pro": {
+    "category": "СКУД",
+    "device_type": "Конвертер Wiegand-RS485",
+    "interface": "Wiegand, RS485",
+    "power": "12В"
+  },
+  "Temid ZK-D1065": {
+    "category": "СКУД",
+    "device_type": "Металлодетектор стационарный",
+    "power": "220В",
+    "temp_range": "-20...+55°C"
+  },
+  "Temid ZK-D1090": {
+    "category": "СКУД",
+    "device_type": "Металлодетектор стационарный",
+    "power": "220В",
+    "temp_range": "-20...+55°C"
+  },
+  "Temid mTS1000": {
+    "category": "СКУД",
+    "device_type": "Электронная проходная моторизованная",
+    "power": "220В",
+    "temp_range": "-15...+60°C"
+  },
+  "Temid mTS1000 mainboard": {
+    "category": "СКУД",
+    "device_type": "Плата управления проходной"
+  },
+  "Temid FBL1011 Motor Control board v2": {
+    "category": "СКУД",
+    "device_type": "Плата управления мотором турникета"
+  },
+  "Temid FBL2022 Pro Control Board": {
+    "category": "СКУД",
+    "device_type": "Плата управления турникетом"
+  },
+  "Temid MA300-BT": {
+    "category": "СКУД",
+    "device_type": "Считыватель отпечатков Bluetooth",
+    "verification": "Отпечаток, EM-Marine, Bluetooth",
+    "interface": "TCP/IP, Wiegand, Bluetooth",
+    "power": "12В",
+    "ip_rating": "IP65"
+  },
+  "Temid ProFace X Gate": {
+    "category": "СКУД",
+    "device_type": "Биометрический терминал для турникета",
+    "verification": "Лицо, EM-Marine",
+    "interface": "TCP/IP, USB, Wiegand, RS485",
+    "display": "8\" IPS тачскрин",
+    "power": "12В",
+    "ip_rating": "IP68"
+  },
+  "Temid SBT1000S": {
+    "category": "СКУД",
+    "device_type": "Шлагбаум скоростной",
+    "power": "220В",
+    "temp_range": "-30...+75°C",
+    "ip_rating": "IP54"
+  },
+  "Temid SBT1000S Boom 3m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 3м",
+    "dimensions": "3000 мм"
+  },
+  "Temid SBT1000S Boom 4m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 4м",
+    "dimensions": "4000 мм"
+  },
+  "Temid SBT1000S PCB Control Board": {
+    "category": "СКУД",
+    "device_type": "Плата управления шлагбаума"
+  },
+  "Temid SBT1000S Power Supply Board": {
+    "category": "СКУД",
+    "device_type": "Плата питания шлагбаума"
+  },
+  "Temid SBT1000S Straight Boom 3m": {
+    "category": "СКУД",
+    "device_type": "Стрела прямая 3м",
+    "dimensions": "3000 мм"
+  },
+  "Temid SBT1000S Straight Boom 4m": {
+    "category": "СКУД",
+    "device_type": "Стрела прямая 4м",
+    "dimensions": "4000 мм"
+  },
+  "Temid SBT2000S": {
+    "category": "СКУД",
+    "device_type": "Шлагбаум скоростной",
+    "power": "220В",
+    "temp_range": "-30...+75°C",
+    "ip_rating": "IP54"
+  },
+  "Temid SBT2000S Boom 3m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 3м",
+    "dimensions": "3000 мм"
+  },
+  "Temid SBT2000S Boom 4m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 4м",
+    "dimensions": "4000 мм"
+  },
+  "Temid SBT2000S Straight Boom 3m": {
+    "category": "СКУД",
+    "device_type": "Стрела прямая 3м",
+    "dimensions": "3000 мм"
+  },
+  "Temid SBT2000S Straight Boom 4m": {
+    "category": "СКУД",
+    "device_type": "Стрела прямая 4м",
+    "dimensions": "4000 мм"
+  },
+  "Temid BGM2000R Speed Main Limit Board": {
+    "category": "СКУД",
+    "device_type": "Плата ограничения скорости шлагбаума"
+  },
+  "Temid BGM2000R_Straight Boom_5м": {
+    "category": "СКУД",
+    "device_type": "Стрела прямая 5м",
+    "dimensions": "5000 мм"
+  },
+  "Temid BGM2000R Boom 4m": {
+    "category": "СКУД",
+    "device_type": "Стрела круглая 4м (правая)",
+    "dimensions": "4000 мм"
+  }
+}

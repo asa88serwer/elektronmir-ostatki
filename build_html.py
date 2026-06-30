@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.stdout.reconfigure(encoding="utf-8")
 
 from merge_warehouses import extract_all_items
+from parse_specs import build_specs_map, SPEC_LABELS
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -52,6 +53,11 @@ for b in BRANDS:
 
 data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 now = datetime.now().strftime("%d.%m.%Y %H:%M")
+
+print("Загрузка характеристик из прайсов...")
+specs_map = build_specs_map(all_names)
+specs_json = json.dumps(specs_map, ensure_ascii=False, separators=(',', ':'))
+spec_labels_json = json.dumps(SPEC_LABELS, ensure_ascii=False, separators=(',', ':'))
 
 html = f'''<!DOCTYPE html>
 <html lang="ru">
@@ -107,6 +113,35 @@ tr.zero{{color:#aaa}}
 .contact-bar a:hover{{text-decoration:underline}}
 .contact-bar .sep{{color:#bbb}}
 .footer{{text-align:center;padding:16px;font-size:12px;color:#999}}
+td.cmp-cell{{text-align:center;width:50px}}
+th.cmp-cell{{text-align:center;width:50px;cursor:default}}
+th.cmp-cell:hover{{background:#1565c0}}
+td.cmp-cell input[type=checkbox]{{width:18px;height:18px;cursor:pointer;accent-color:#1976d2}}
+.compare-bar{{background:#e3f2fd;padding:10px 30px;display:none;align-items:center;gap:12px;border-bottom:1px solid #bbdefb;font-size:13px;flex-wrap:wrap}}
+.compare-bar.visible{{display:flex}}
+.compare-bar button{{padding:8px 18px;border:none;border-radius:4px;font-size:14px;cursor:pointer;font-weight:500}}
+.compare-bar .btn-compare{{background:#1565c0;color:#fff}}
+.compare-bar .btn-compare:hover{{background:#0d47a1}}
+.compare-bar .btn-clear{{background:#eee;color:#333;border:1px solid #ccc}}
+.compare-bar .btn-clear:hover{{background:#ddd}}
+.compare-bar .cnt-info{{color:#1565c0;font-weight:600}}
+.modal-overlay{{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:100;justify-content:center;align-items:flex-start;padding:40px 20px;overflow-y:auto}}
+.modal-overlay.visible{{display:flex}}
+.modal{{background:#fff;border-radius:8px;max-width:95vw;width:auto;box-shadow:0 8px 32px rgba(0,0,0,.3);overflow:hidden;max-height:85vh;display:flex;flex-direction:column}}
+.modal-header{{background:#1565c0;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0}}
+.modal-header h2{{font-size:18px;font-weight:600}}
+.modal-close{{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:0 4px}}
+.modal-body{{padding:16px;overflow:auto;flex:1}}
+.spec-table{{border-collapse:collapse;width:100%}}
+.spec-table th,.spec-table td{{padding:8px 12px;border:1px solid #ddd;font-size:13px;text-align:left;white-space:nowrap}}
+.spec-table thead th{{background:#f5f5f5;position:sticky;top:0;z-index:1;font-weight:600;max-width:200px;overflow:hidden;text-overflow:ellipsis}}
+.spec-table tbody th{{background:#fafafa;font-weight:600;white-space:nowrap;min-width:120px}}
+.spec-table td{{min-width:100px;max-width:220px;overflow:hidden;text-overflow:ellipsis}}
+.spec-table tr:hover td,.spec-table tr:hover th{{background:#e3f2fd}}
+.spec-val-match{{color:#2e7d32;font-weight:600}}
+.spec-val-diff{{color:#c62828}}
+.spec-val-empty{{color:#bbb;font-style:italic}}
+.has-specs{{color:#1565c0;font-size:10px;vertical-align:super;margin-left:3px}}
 @media(max-width:768px){{
 .header{{padding:14px 16px;flex-wrap:wrap}}
 .header h1{{font-size:18px}}
@@ -125,6 +160,7 @@ td{{padding:6px 6px;font-size:12px}}
 .brands button{{padding:5px 10px;font-size:12px;min-height:32px}}
 .contact-bar{{padding:8px 16px;font-size:12px;gap:8px}}
 .contact-bar .sep{{display:none}}
+.compare-bar{{padding:8px 16px}}
 .pagination button{{padding:10px 14px;flex:1;text-align:center}}
 .footer{{font-size:11px}}
 }}
@@ -151,6 +187,8 @@ td{{padding:5px 4px;font-size:11px}}
 <div class="contact-bar">
 <span>&#9993; Менеджер: <a href="mailto:anikin_s@elektronmir.com">anikin_s@elektronmir.com</a></span>
 <span class="sep">|</span>
+<span>&#9742; <a href="tel:+79885315067">+7 988 531 50 67</a></span>
+<span class="sep">|</span>
 <span>Аникин Сергей Александрович</span>
 </div>
 <div class="brands">
@@ -162,8 +200,14 @@ td{{padding:5px 4px;font-size:11px}}
 
 <div class="info" id="info"></div>
 </div>
+<div class="compare-bar" id="compareBar">
+<span class="cnt-info" id="cmpCount">0 выбрано</span>
+<button class="btn-compare" onclick="showCompare()">Сравнить выбранные</button>
+<button class="btn-clear" onclick="clearCompare()">Сбросить</button>
+</div>
 <div class="container">
 <table><thead><tr>
+<th class="cmp-cell">&#9745;</th>
 <th style="width:50px">#</th>
 <th id="thName" onclick="sortBy(0)">Наименование <span class="arrow">&#9650;</span></th>
 <th class="num" id="thMinsk" onclick="sortBy(1)">{col1_name} <span class="arrow">&#9650;</span></th>
@@ -176,11 +220,20 @@ td{{padding:5px 4px;font-size:11px}}
 <div id="pageInfo"></div>
 </div>
 </div>
+<div class="modal-overlay" id="specModal">
+<div class="modal">
+<div class="modal-header"><h2>Сравнение характеристик</h2><button class="modal-close" onclick="closeSpecModal()">&times;</button></div>
+<div class="modal-body" id="specModalBody"></div>
+</div>
+</div>
 <div class="footer">Электронный мир &copy; 2026 | Данные обновлены: {now} | Источник: {source}</div>
 <script>
 document.getElementById('dateEl').textContent='Обновлено: {now}';
 var DATA={data_json};
+var SPECS={specs_json};
+var SPEC_LABELS={spec_labels_json};
 var PAGE=200,page=0,sortCol=0,sortAsc=true,filtered=DATA.slice(),curBrand='';
+var checked={{}},compareMode=false;
 var searchEl=document.getElementById('search'),filterEl=document.getElementById('filter');
 document.querySelectorAll('.brands button').forEach(function(btn){{
 btn.addEventListener('click',function(){{
@@ -211,16 +264,81 @@ filtered.sort(function(x,y){{var v=x[c]<y[c]?-1:x[c]>y[c]?1:0;return a?v:-v;}});
 function sortBy(c){{if(sortCol===c)sortAsc=!sortAsc;else{{sortCol=c;sortAsc=c===0;}}doSort();page=0;render();}}
 function escHtml(s){{return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}}
 function highlightText(text,q){{if(!q)return escHtml(text);var i=text.toLowerCase().indexOf(q);if(i===-1)return escHtml(text);return escHtml(text.substring(0,i))+'<span class="highlight">'+escHtml(text.substring(i,i+q.length))+'</span>'+escHtml(text.substring(i+q.length));}}
+function updateCompareBar(){{
+var cnt=Object.keys(checked).length;
+document.getElementById('cmpCount').textContent=cnt+' выбрано';
+var bar=document.getElementById('compareBar');
+if(cnt>0)bar.classList.add('visible');else{{bar.classList.remove('visible');if(compareMode)exitCompare();}}
+}}
+function toggleCheck(name){{
+if(checked[name])delete checked[name];else checked[name]=true;
+updateCompareBar();render();
+}}
+function showCompare(){{
+var names=Object.keys(checked);
+if(names.length===0)return;
+var hasAnySpecs=names.some(function(n){{return SPECS[n];}});
+if(hasAnySpecs){{openSpecModal(names);}}
+compareMode=true;
+filtered=DATA.filter(function(r){{return checked[r[0]];}});
+doSort();page=0;render();
+document.getElementById('info').textContent='Сравнение: '+filtered.length+' позиций';
+}}
+function openSpecModal(names){{
+var html='<table class="spec-table"><thead><tr><th>Характеристика</th>';
+for(var i=0;i<names.length;i++){{
+var short=names[i].length>30?names[i].substring(0,30)+'...':names[i];
+html+='<th title="'+escHtml(names[i])+'">'+escHtml(short)+'</th>';
+}}
+html+='</tr></thead><tbody>';
+for(var s=0;s<SPEC_LABELS.length;s++){{
+var key=SPEC_LABELS[s][0],label=SPEC_LABELS[s][1];
+var vals=[];
+var hasAny=false;
+for(var i=0;i<names.length;i++){{
+var sp=SPECS[names[i]];
+var v=sp?sp[key]||'':'';
+vals.push(v);
+if(v)hasAny=true;
+}}
+if(!hasAny)continue;
+html+='<tr><th>'+escHtml(label)+'</th>';
+var allSame=vals.every(function(v){{return v===vals[0];}});
+for(var i=0;i<vals.length;i++){{
+var cls='';
+if(!vals[i])cls=' class="spec-val-empty"';
+else if(vals.filter(function(v){{return v;}}).length>1){{
+cls=allSame?' class="spec-val-match"':' class="spec-val-diff"';
+}}
+html+='<td'+cls+'>'+(vals[i]?escHtml(vals[i]):'—')+'</td>';
+}}
+html+='</tr>';
+}}
+html+='</tbody></table>';
+document.getElementById('specModalBody').innerHTML=html;
+document.getElementById('specModal').classList.add('visible');
+}}
+function closeSpecModal(){{
+document.getElementById('specModal').classList.remove('visible');
+}}
+function exitCompare(){{
+compareMode=false;applyFilter();
+}}
+function clearCompare(){{
+checked={{}};compareMode=false;updateCompareBar();applyFilter();
+}}
 function render(){{
 var start=page*PAGE,end=Math.min(start+PAGE,filtered.length);
 var q=searchEl.value.toLowerCase();
 var html='';
 for(var i=start;i<end;i++){{
 var r=filtered[i],total=r[1]+r[2],cls=total===0?' class="zero"':'';
-html+='<tr'+cls+'><td>'+(i+1)+'</td><td class="product-name">'+highlightText(r[0],q)+'</td><td class="num">'+r[1].toLocaleString('ru-RU')+'</td><td class="num">'+r[2].toLocaleString('ru-RU')+'</td><td class="num"><b>'+total.toLocaleString('ru-RU')+'</b></td></tr>';
+var chk=checked[r[0]]?' checked':'';
+var specMark=SPECS[r[0]]?'<span class="has-specs" title="Есть характеристики">&#9679;</span>':'';
+html+='<tr'+cls+'><td class="cmp-cell"><input type="checkbox" data-idx="'+i+'"'+chk+'></td><td>'+(i+1)+'</td><td class="product-name">'+highlightText(r[0],q)+specMark+'</td><td class="num">'+r[1].toLocaleString('ru-RU')+'</td><td class="num">'+r[2].toLocaleString('ru-RU')+'</td><td class="num"><b>'+total.toLocaleString('ru-RU')+'</b></td></tr>';
 }}
 document.getElementById('tbody').innerHTML=html;
-document.getElementById('info').textContent='Найдено: '+filtered.length.toLocaleString('ru-RU')+' из '+DATA.length.toLocaleString('ru-RU');
+if(!compareMode)document.getElementById('info').textContent='Найдено: '+filtered.length.toLocaleString('ru-RU')+' из '+DATA.length.toLocaleString('ru-RU');
 var pages=Math.ceil(filtered.length/PAGE)||1;
 document.getElementById('pageInfo').textContent='Страница '+(page+1)+' из '+pages;
 document.getElementById('prevBtn').disabled=page===0;
@@ -231,6 +349,13 @@ if(sortCol<3){{var el=document.getElementById(thIds[sortCol]);el.classList.add('
 }}
 function changePage(d){{page+=d;render();window.scrollTo(0,0);}}
 
+document.getElementById('tbody').addEventListener('change',function(e){{
+if(e.target.type==='checkbox'&&e.target.dataset.idx!==undefined){{
+var idx=parseInt(e.target.dataset.idx);
+var name=filtered[idx][0];
+toggleCheck(name);
+}}
+}});
 searchEl.addEventListener('input',function(){{clearTimeout(this._t);this._t=setTimeout(applyFilter,200);}});
 filterEl.addEventListener('change',applyFilter);
 applyFilter();
@@ -242,6 +367,8 @@ if((e.ctrlKey||e.metaKey)&&(k==='u'||k==='s'||k==='p')){{e.preventDefault();retu
 if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(k==='i'||k==='j'||k==='c')){{e.preventDefault();return false;}}
 }});
 document.addEventListener('dragstart',function(e){{e.preventDefault();}});
+document.getElementById('specModal').addEventListener('click',function(e){{if(e.target===this)closeSpecModal();}});
+document.addEventListener('keydown',function(e){{if(e.key==='Escape')closeSpecModal();}});
 </script>
 </body>
 </html>'''
