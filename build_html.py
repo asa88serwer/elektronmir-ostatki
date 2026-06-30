@@ -59,6 +59,18 @@ specs_map = build_specs_map(all_names)
 specs_json = json.dumps(specs_map, ensure_ascii=False, separators=(',', ':'))
 spec_labels_json = json.dumps(SPEC_LABELS, ensure_ascii=False, separators=(',', ':'))
 
+# Загрузка изображений из fetched_specs.json (если есть)
+images_map = {}
+fetched_path = os.path.join(DIR, "fetched_specs.json")
+if os.path.exists(fetched_path):
+    with open(fetched_path, encoding="utf-8") as _f:
+        for entry in json.load(_f):
+            img = entry.get("image_url", "")
+            if img:
+                images_map[entry["name"]] = img
+    print(f"  Изображений загружено: {len(images_map)}")
+images_json = json.dumps(images_map, ensure_ascii=False, separators=(',', ':'))
+
 html = f'''<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -142,6 +154,9 @@ td.cmp-cell input[type=checkbox]{{width:18px;height:18px;cursor:pointer;accent-c
 .spec-val-diff{{color:#c62828}}
 .spec-val-empty{{color:#bbb;font-style:italic}}
 .has-specs{{color:#1565c0;font-size:10px;vertical-align:super;margin-left:3px}}
+.spec-img-row th{{background:#f5f5f5;text-align:center;font-size:12px;color:#666;padding:6px 8px}}
+.spec-img-row td{{text-align:center;padding:10px 8px;background:#fafafa}}
+.spec-img-row img{{max-width:160px;max-height:120px;object-fit:contain;border:1px solid #eee;border-radius:4px;background:#fff}}
 @media(max-width:768px){{
 .header{{padding:14px 16px;flex-wrap:wrap}}
 .header h1{{font-size:18px}}
@@ -236,6 +251,7 @@ document.getElementById('dateEl').textContent='Обновлено: {now}';
 var DATA={data_json};
 var SPECS={specs_json};
 var SPEC_LABELS={spec_labels_json};
+var IMAGES={images_json};
 var PAGE=200,page=0,sortCol=0,sortAsc=true,filtered=DATA.slice(),curBrand='';
 var checked={{}},compareMode=false;
 var searchEl=document.getElementById('search'),filterEl=document.getElementById('filter');
@@ -289,7 +305,17 @@ doSort();page=0;render();
 document.getElementById('info').textContent='Сравнение: '+filtered.length+' позиций';
 }}
 function openSpecModal(names){{
-var html='<table class="spec-table"><thead><tr><th>Характеристика</th>';
+var hasImages=names.some(function(n){{return IMAGES[n];}});
+var html='<table class="spec-table"><thead>';
+if(hasImages){{
+html+='<tr class="spec-img-row"><th>Фото</th>';
+for(var i=0;i<names.length;i++){{
+var imgUrl=IMAGES[names[i]]||'';
+html+='<td>'+(imgUrl?'<img src="'+imgUrl+'" alt="'+escHtml(names[i])+'" loading="lazy">':'<span style="color:#ccc;font-size:12px">нет фото</span>')+'</td>';
+}}
+html+='</tr>';
+}}
+html+='<tr><th>Характеристика</th>';
 for(var i=0;i<names.length;i++){{
 var short=names[i].length>30?names[i].substring(0,30)+'...':names[i];
 html+='<th title="'+escHtml(names[i])+'">'+escHtml(short)+'</th>';
