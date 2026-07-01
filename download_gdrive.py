@@ -20,7 +20,19 @@ def main():
         print("GOOGLE_SA_KEY не задан, пропуск скачивания")
         return
 
-    creds_info = json.loads(sa_json)
+    sa_json = sa_json.strip()
+    # Снять внешние кавычки, если секрет был сохранён как "{ ... }"
+    if sa_json.startswith('"') and sa_json.endswith('"'):
+        sa_json = sa_json[1:-1].replace('\\"', '"')
+
+    print(f"GOOGLE_SA_KEY первые 20 символов: {repr(sa_json[:20])}")
+
+    try:
+        creds_info = json.loads(sa_json)
+    except json.JSONDecodeError as e:
+        print(f"Ошибка парсинга GOOGLE_SA_KEY: {e}")
+        print(f"Длина строки: {len(sa_json)}, первые 50 символов: {repr(sa_json[:50])}")
+        raise
     creds = service_account.Credentials.from_service_account_info(
         creds_info, scopes=["https://www.googleapis.com/auth/drive.readonly"]
     )
