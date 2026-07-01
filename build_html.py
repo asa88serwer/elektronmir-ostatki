@@ -1,5 +1,5 @@
 import sys, os, json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -52,7 +52,7 @@ for b in BRANDS:
         brand_buttons += f'<button data-brand="{b}">{b} <span class="cnt">{c}</span></button>\n'
 
 data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
-now = datetime.now().strftime("%d.%m.%Y %H:%M")
+now = datetime.now(timezone(timedelta(hours=3))).strftime("%d.%m.%Y %H:%M")
 
 print("Загрузка характеристик из прайсов...")
 specs_map = build_specs_map(all_names)
