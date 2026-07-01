@@ -10,8 +10,8 @@ import io
 DIR = os.path.dirname(os.path.abspath(__file__))
 
 FILES = {
-    "Минск.xls": "1dDqOA36DIo11nIcYGbbRWoVBiWihlMd0",
-    "Москва.xls": "1ioGPOb8mNRFHHyXtb9BL6XAEWS-M4SLr",
+    "Минск.xls": "1-xWFT4u3vKELBgdrc-ahQeloKVU4PU-j",
+    "Москва.xls": "1MNKOhDazKAinY-FRRsc7kdIzWKSmridY",
 }
 
 def main():
