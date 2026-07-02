@@ -54,13 +54,58 @@ for b in BRANDS:
 data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 now = datetime.now(timezone(timedelta(hours=3))).strftime("%d.%m.%Y %H:%M")
 
-# Загрузка баннеров
-banners = []
-banners_path = os.path.join(DIR, "banners.json")
-if os.path.exists(banners_path):
-    with open(banners_path, encoding="utf-8") as _f:
-        banners = json.load(_f)
+# Загрузка баннеров из папки banners/
+def load_banners():
+    result = []
+    banners_dir = os.path.join(DIR, "banners")
+    if not os.path.isdir(banners_dir):
+        return result
+    folders = sorted(
+        f for f in os.listdir(banners_dir)
+        if os.path.isdir(os.path.join(banners_dir, f)) and not f.startswith("_")
+    )
+    for folder in folders:
+        fpath = os.path.join(banners_dir, folder)
+        txt_path = os.path.join(fpath, "text.txt")
+        if not os.path.exists(txt_path):
+            continue
+        with open(txt_path, encoding="utf-8") as f:
+            lines = [l.rstrip() for l in f.readlines()]
+        # Разбираем: первые непустые строки без "key: value" — заголовок и текст
+        meta = {}
+        body_lines = []
+        for line in lines:
+            if ":" in line and line.split(":")[0].strip() in (
+                "tag","tag_color","link","bg","color"
+            ):
+                k, v = line.split(":", 1)
+                meta[k.strip()] = v.strip()
+            elif line:
+                body_lines.append(line)
+        title = body_lines[0] if body_lines else ""
+        text  = " ".join(body_lines[1:]) if len(body_lines) > 1 else ""
+        # Ищем картинку
+        image_url = ""
+        for ext in ("jpg","jpeg","png","webp","gif"):
+            img_path = os.path.join(fpath, f"image.{ext}")
+            if os.path.exists(img_path):
+                image_url = f"banners/{folder}/image.{ext}"
+                break
+        if title:
+            result.append({
+                "title":     title,
+                "text":      text,
+                "tag":       meta.get("tag", ""),
+                "tag_color": meta.get("tag_color", "#1565c0"),
+                "link":      meta.get("link", ""),
+                "bg":        meta.get("bg", "#f5f9ff"),
+                "image":     image_url,
+            })
+    return result
+
+banners = load_banners()
 banners_json = json.dumps(banners, ensure_ascii=False, separators=(',', ':'))
+print(f"  Баннеров загружено: {len(banners)}")
 
 print("Загрузка характеристик из прайсов...")
 specs_map = build_specs_map(all_names)
