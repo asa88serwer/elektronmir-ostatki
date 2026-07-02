@@ -467,7 +467,7 @@ for(var i=start;i<end;i++){{
 var r=filtered[i],total=r[1]+r[2],cls=total===0?' class="zero"':'';
 var chk=checked[r[0]]?' checked':'';
 var specMark=SPECS[r[0]]?'<span class="has-specs" title="Есть характеристики">&#9679;</span>':'';
-var imgMark=IMAGES[r[0]]?'<span class="has-image" title="Нажми для просмотра фото" onclick="showImgPopup(\''+escHtml(r[0])+'\')">&#128247;</span>':'';
+var imgMark=IMAGES[r[0]]?'<span class="has-image" title="Нажми для просмотра фото" onclick="showImgPopup(\\''+escHtml(r[0])+'\\')">&#128247;</span>':'';
 html+='<tr'+cls+'><td class="cmp-cell"><input type="checkbox" data-idx="'+i+'"'+chk+'></td><td>'+(i+1)+'</td><td class="product-name">'+highlightText(r[0],q)+specMark+imgMark+'</td><td class="num">'+r[1].toLocaleString('ru-RU')+'</td><td class="num">'+r[2].toLocaleString('ru-RU')+'</td><td class="num"><b>'+total.toLocaleString('ru-RU')+'</b></td></tr>';
 }}
 document.getElementById('tbody').innerHTML=html;
