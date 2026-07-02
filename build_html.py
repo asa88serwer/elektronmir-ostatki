@@ -154,6 +154,7 @@ td.cmp-cell input[type=checkbox]{{width:18px;height:18px;cursor:pointer;accent-c
 .spec-val-diff{{color:#c62828}}
 .spec-val-empty{{color:#bbb;font-style:italic}}
 .has-specs{{color:#1565c0;font-size:10px;vertical-align:super;margin-left:3px}}
+.has-image{{font-size:11px;vertical-align:super;margin-left:2px;cursor:default}}
 .spec-img-row th{{background:#f5f5f5;text-align:center;font-size:12px;color:#666;padding:6px 8px}}
 .spec-img-row td{{text-align:center;padding:10px 8px;background:#fafafa}}
 .spec-img-row img{{max-width:160px;max-height:120px;object-fit:contain;border:1px solid #eee;border-radius:4px;background:#fff}}
@@ -365,7 +366,8 @@ for(var i=start;i<end;i++){{
 var r=filtered[i],total=r[1]+r[2],cls=total===0?' class="zero"':'';
 var chk=checked[r[0]]?' checked':'';
 var specMark=SPECS[r[0]]?'<span class="has-specs" title="Есть характеристики">&#9679;</span>':'';
-html+='<tr'+cls+'><td class="cmp-cell"><input type="checkbox" data-idx="'+i+'"'+chk+'></td><td>'+(i+1)+'</td><td class="product-name">'+highlightText(r[0],q)+specMark+'</td><td class="num">'+r[1].toLocaleString('ru-RU')+'</td><td class="num">'+r[2].toLocaleString('ru-RU')+'</td><td class="num"><b>'+total.toLocaleString('ru-RU')+'</b></td></tr>';
+var imgMark=IMAGES[r[0]]?'<span class="has-image" title="Есть изображение">&#128247;</span>':'';
+html+='<tr'+cls+'><td class="cmp-cell"><input type="checkbox" data-idx="'+i+'"'+chk+'></td><td>'+(i+1)+'</td><td class="product-name">'+highlightText(r[0],q)+specMark+imgMark+'</td><td class="num">'+r[1].toLocaleString('ru-RU')+'</td><td class="num">'+r[2].toLocaleString('ru-RU')+'</td><td class="num"><b>'+total.toLocaleString('ru-RU')+'</b></td></tr>';
 }}
 document.getElementById('tbody').innerHTML=html;
 if(!compareMode)document.getElementById('info').textContent='Найдено: '+filtered.length.toLocaleString('ru-RU')+' из '+DATA.length.toLocaleString('ru-RU');
