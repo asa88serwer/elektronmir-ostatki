@@ -54,6 +54,14 @@ for b in BRANDS:
 data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 now = datetime.now(timezone(timedelta(hours=3))).strftime("%d.%m.%Y %H:%M")
 
+# Загрузка баннеров
+banners = []
+banners_path = os.path.join(DIR, "banners.json")
+if os.path.exists(banners_path):
+    with open(banners_path, encoding="utf-8") as _f:
+        banners = json.load(_f)
+banners_json = json.dumps(banners, ensure_ascii=False, separators=(',', ':'))
+
 print("Загрузка характеристик из прайсов...")
 specs_map = build_specs_map(all_names)
 specs_json = json.dumps(specs_map, ensure_ascii=False, separators=(',', ':'))
@@ -197,6 +205,23 @@ td{{padding:5px 4px;font-size:11px}}
 .brands{{padding:8px 12px}}
 .brands .label{{width:100%;margin-bottom:4px}}
 }}
+.banner-wrap{{position:relative;overflow:hidden;margin:0 0 0 0}}
+.banner-track{{display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1)}}
+.banner-slide{{min-width:100%;padding:14px 20px 12px;box-sizing:border-box;display:flex;align-items:center;gap:16px}}
+.banner-slide img{{height:80px;width:auto;max-width:120px;object-fit:contain;border-radius:6px;flex-shrink:0}}
+.banner-content{{flex:1;min-width:0}}
+.banner-tag{{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;color:#fff;margin-bottom:6px;letter-spacing:.4px}}
+.banner-title{{font-size:15px;font-weight:700;color:#1a1a2e;margin-bottom:4px;line-height:1.3}}
+.banner-text{{font-size:13px;color:#444;line-height:1.4}}
+.banner-link{{display:inline-block;margin-top:6px;font-size:12px;color:#1565c0;text-decoration:none;font-weight:600}}
+.banner-link:hover{{text-decoration:underline}}
+.banner-nav{{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.18);border:none;color:#fff;font-size:18px;width:30px;height:30px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;transition:background .2s}}
+.banner-nav:hover{{background:rgba(0,0,0,.4)}}
+.banner-prev{{left:6px}}
+.banner-next{{right:6px}}
+.banner-dots{{display:flex;justify-content:center;gap:6px;padding:6px 0 8px}}
+.banner-dot{{width:7px;height:7px;border-radius:50%;background:#ccc;border:none;cursor:pointer;padding:0;transition:background .2s}}
+.banner-dot.active{{background:#1565c0}}
 </style>
 </head>
 <body>
@@ -218,6 +243,12 @@ td{{padding:5px 4px;font-size:11px}}
 <span class="sep">|</span>
 <span><a href="https://max.ru/u/f9LHodD0cOLxsJKEgdxMwcWarCIrWLrkGd4onIZR9HJBtCEZ_" target="_blank">MAX</a></span>
 </div>
+<div class="banner-wrap" id="bannerWrap">
+<div class="banner-track" id="bannerTrack"></div>
+<button class="banner-nav banner-prev" onclick="bannerMove(-1)">&#8249;</button>
+<button class="banner-nav banner-next" onclick="bannerMove(1)">&#8250;</button>
+</div>
+<div class="banner-dots" id="bannerDots"></div>
 <div class="brands">
 <span class="label">Бренды:</span>
 {brand_buttons}</div>
@@ -426,6 +457,44 @@ if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(k==='i'||k==='j'||k==='c')){{e.preventDe
 document.addEventListener('dragstart',function(e){{e.preventDefault();}});
 document.getElementById('specModal').addEventListener('click',function(e){{if(e.target===this)closeSpecModal();}});
 document.addEventListener('keydown',function(e){{if(e.key==='Escape'){{closeSpecModal();closeImgPopup();}}}});
+// --- Баннер-слайдер ---
+(function(){{
+var BANNERS={banners_json};
+if(!BANNERS||!BANNERS.length){{
+  document.getElementById('bannerWrap').style.display='none';
+  document.getElementById('bannerDots').style.display='none';
+  return;
+}}
+var track=document.getElementById('bannerTrack');
+var dotsEl=document.getElementById('bannerDots');
+var cur=0,timer=null;
+BANNERS.forEach(function(b,i){{
+  var img=b.image?'<img src="'+b.image+'" alt="">':'';
+  var lnk=b.link?'<a class="banner-link" href="'+b.link+'" target="_blank">Подробнее &rarr;</a>':'';
+  var tag=b.tag?'<span class="banner-tag" style="background:'+( b.tag_color||'#1565c0')+'">'+b.tag+'</span>':'';
+  var slide=document.createElement('div');
+  slide.className='banner-slide';
+  slide.style.background=b.bg||'#f5f9ff';
+  slide.innerHTML=img+'<div class="banner-content">'+tag+'<div class="banner-title">'+b.title+'</div><div class="banner-text">'+b.text+'</div>'+lnk+'</div>';
+  track.appendChild(slide);
+  var dot=document.createElement('button');
+  dot.className='banner-dot'+(i===0?' active':'');
+  dot.onclick=function(){{goTo(i);}};
+  dotsEl.appendChild(dot);
+}});
+function goTo(n){{
+  cur=(n+BANNERS.length)%BANNERS.length;
+  track.style.transform='translateX(-'+cur*100+'%)';
+  dotsEl.querySelectorAll('.banner-dot').forEach(function(d,i){{d.classList.toggle('active',i===cur);}});
+  resetTimer();
+}}
+function resetTimer(){{
+  clearInterval(timer);
+  if(BANNERS.length>1)timer=setInterval(function(){{goTo(cur+1);}},5000);
+}}
+window.bannerMove=function(d){{goTo(cur+d);}};
+resetTimer();
+}})();
 </script>
 </body>
 </html>'''
