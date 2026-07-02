@@ -154,7 +154,14 @@ td.cmp-cell input[type=checkbox]{{width:18px;height:18px;cursor:pointer;accent-c
 .spec-val-diff{{color:#c62828}}
 .spec-val-empty{{color:#bbb;font-style:italic}}
 .has-specs{{color:#1565c0;font-size:10px;vertical-align:super;margin-left:3px}}
-.has-image{{font-size:11px;vertical-align:super;margin-left:2px;cursor:default}}
+.has-image{{font-size:11px;vertical-align:super;margin-left:2px;cursor:pointer;transition:transform .1s}}
+.has-image:hover{{transform:scale(1.3)}}
+.img-popup-overlay{{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:200;justify-content:center;align-items:center}}
+.img-popup-overlay.visible{{display:flex}}
+.img-popup{{background:#fff;border-radius:10px;padding:16px;max-width:90vw;max-height:90vh;display:flex;flex-direction:column;align-items:center;gap:12px;box-shadow:0 8px 40px rgba(0,0,0,.5)}}
+.img-popup h3{{font-size:14px;color:#333;text-align:center;max-width:400px;word-break:break-word;margin:0}}
+.img-popup img{{max-width:min(400px,80vw);max-height:60vh;object-fit:contain;border-radius:4px}}
+.img-popup-close{{background:#1565c0;color:#fff;border:none;border-radius:6px;padding:7px 24px;cursor:pointer;font-size:14px}}
 .spec-img-row th{{background:#f5f5f5;text-align:center;font-size:12px;color:#666;padding:6px 8px}}
 .spec-img-row td{{text-align:center;padding:10px 8px;background:#fafafa}}
 .spec-img-row img{{max-width:160px;max-height:120px;object-fit:contain;border:1px solid #eee;border-radius:4px;background:#fff}}
@@ -244,6 +251,13 @@ td{{padding:5px 4px;font-size:11px}}
 <div class="modal">
 <div class="modal-header"><h2>Сравнение характеристик</h2><button class="modal-close" onclick="closeSpecModal()">&times;</button></div>
 <div class="modal-body" id="specModalBody"></div>
+</div>
+</div>
+<div class="img-popup-overlay" id="imgPopup" onclick="closeImgPopup()">
+<div class="img-popup" onclick="event.stopPropagation()">
+<h3 id="imgPopupTitle"></h3>
+<img id="imgPopupImg" src="" alt="">
+<button class="img-popup-close" onclick="closeImgPopup()">Закрыть</button>
 </div>
 </div>
 <div class="footer">Электронный мир &copy; 2026 | Данные обновлены: {now} | Источник: {source}</div>
@@ -352,6 +366,17 @@ document.getElementById('specModal').classList.add('visible');
 function closeSpecModal(){{
 document.getElementById('specModal').classList.remove('visible');
 }}
+function showImgPopup(name){{
+var url=IMAGES[name];
+if(!url)return;
+document.getElementById('imgPopupTitle').textContent=name;
+document.getElementById('imgPopupImg').src=url;
+document.getElementById('imgPopup').classList.add('visible');
+}}
+function closeImgPopup(){{
+document.getElementById('imgPopup').classList.remove('visible');
+document.getElementById('imgPopupImg').src='';
+}}
 function exitCompare(){{
 compareMode=false;applyFilter();
 }}
@@ -366,7 +391,7 @@ for(var i=start;i<end;i++){{
 var r=filtered[i],total=r[1]+r[2],cls=total===0?' class="zero"':'';
 var chk=checked[r[0]]?' checked':'';
 var specMark=SPECS[r[0]]?'<span class="has-specs" title="Есть характеристики">&#9679;</span>':'';
-var imgMark=IMAGES[r[0]]?'<span class="has-image" title="Есть изображение">&#128247;</span>':'';
+var imgMark=IMAGES[r[0]]?'<span class="has-image" title="Нажми для просмотра фото" onclick="showImgPopup(\''+escHtml(r[0])+'\')">&#128247;</span>':'';
 html+='<tr'+cls+'><td class="cmp-cell"><input type="checkbox" data-idx="'+i+'"'+chk+'></td><td>'+(i+1)+'</td><td class="product-name">'+highlightText(r[0],q)+specMark+imgMark+'</td><td class="num">'+r[1].toLocaleString('ru-RU')+'</td><td class="num">'+r[2].toLocaleString('ru-RU')+'</td><td class="num"><b>'+total.toLocaleString('ru-RU')+'</b></td></tr>';
 }}
 document.getElementById('tbody').innerHTML=html;
@@ -400,7 +425,7 @@ if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(k==='i'||k==='j'||k==='c')){{e.preventDe
 }});
 document.addEventListener('dragstart',function(e){{e.preventDefault();}});
 document.getElementById('specModal').addEventListener('click',function(e){{if(e.target===this)closeSpecModal();}});
-document.addEventListener('keydown',function(e){{if(e.key==='Escape')closeSpecModal();}});
+document.addEventListener('keydown',function(e){{if(e.key==='Escape'){{closeSpecModal();closeImgPopup();}}}});
 </script>
 </body>
 </html>'''
