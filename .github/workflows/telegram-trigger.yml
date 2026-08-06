@@ -10,11 +10,19 @@ permissions:
 
 concurrency:
   group: telegram-trigger
-  cancel-in-progress: false
+  # true: если предыдущий запуск (например, зависший в очереди) ещё не
+  # начался/не завершился к моменту следующего срабатывания cron —
+  # GitHub Actions отменит его и запустит новый, вместо того чтобы
+  # копить очередь до бесконечности. Раньше здесь стояло false, и один
+  # зависший в статусе "queued" запуск заблокировал вообще все
+  # последующие срабатывания (и по расписанию, и по команде в Telegram)
+  # на сутки без каких-либо признаков ошибки.
+  cancel-in-progress: true
 
 jobs:
   poll:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
